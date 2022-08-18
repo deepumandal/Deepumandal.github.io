@@ -8,7 +8,7 @@ const theme = extendTheme({
         // ...
         background: "#edf9fe",
         notselected : "#576c93",
-        describe : "#cfdce7"
+        describe : "#7f8daa"
       },
     },
   })

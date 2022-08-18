@@ -13,7 +13,7 @@ const settings = {
     og: {
       title: "Deepak kumar mandal",
       type: "website",
-      url: "",
+      url: "https://github.com/Deepumandal/new-portfolio",
     },
   };
   
@@ -43,43 +43,43 @@ const settings = {
     {
       name: "Github",
       link: "https://github.com/Deepumandal",
-      fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
+      fontAwesomeIcon: "github.png", // Reference https://fontawesome.com/icons/github?style=brands
       backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
     },
     {
       name: "LinkedIn",
       link: "https://www.linkedin.com/in/deepak-mandal-32b885211/",
-      fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
+      fontAwesomeIcon: "linkdin.png", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
       backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
     },
     {
       name: "YouTube",
       link: "https://www.youtube.com/channel/UCDqHKKzAyGO4m9JFlo8jdQg",
-      fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
+      fontAwesomeIcon: "youtube.png", // Reference https://fontawesome.com/icons/youtube?style=brands
       backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
     },
     {
       name: "Gmail",
       link: "mailto:deepak.studentid2030@gmail.com",
-      fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
+      fontAwesomeIcon: "gmail.png", // Reference https://fontawesome.com/icons/google?style=brands
       backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
     },
     {
       name: "Twitter",
       link: "https://twitter.com/no_mercy_hunter",
-      fontAwesomeIcon: "fa-twitter", // Reference https://fontawesome.com/icons/twitter?style=brands
+      fontAwesomeIcon: "twitter.png", // Reference https://fontawesome.com/icons/twitter?style=brands
       backgroundColor: "#1DA1F2", // Reference https://simpleicons.org/?q=twitter
     },
     {
       name: "Facebook",
       link: "https://www.facebook.com/profile.php?id=100023750443100",
-      fontAwesomeIcon: "fa-facebook-f", // Reference https://fontawesome.com/icons/facebook-f?style=brands
+      fontAwesomeIcon: "facebook.png", // Reference https://fontawesome.com/icons/facebook-f?style=brands
       backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
     },
     {
       name: "Instagram",
       link: "https://www.instagram.com/no_mercy_hunter/",
-      fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
+      fontAwesomeIcon: "instagram.png", // Reference https://fontawesome.com/icons/instagram?style=brands
       backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
     },
   ];
@@ -128,6 +128,7 @@ const settings = {
       //   ],
       // },   <FontAwesomeIcon icon="f" />
       {
+        img : 'heatmap.png',
         title: "Full Stack Development",
         fileName: "FullStackImg",
         skills: [
@@ -295,6 +296,7 @@ const settings = {
       //   ],
       // },
       {
+        img : 'designtool.png',
         title: "UI/UX Design",
         fileName: "DesignImg",
         skills: [

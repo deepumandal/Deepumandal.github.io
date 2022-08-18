@@ -12,10 +12,38 @@ function App() {
       <Fade top>
       <Navbar />
       </Fade>
-      <br />
-      <br />
-      <br />
+     
       <Home />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <Education />
       <Projects />
       <Contact />

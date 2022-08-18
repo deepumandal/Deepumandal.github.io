@@ -7,3 +7,4 @@ react-router-dom@6
 @emotion/react
 @emotion/styled
 framer-motion
+npm i font-awesome

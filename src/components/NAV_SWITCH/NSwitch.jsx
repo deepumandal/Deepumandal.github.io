@@ -13,7 +13,7 @@ const NSwitch = ({ id, name }) => {
 
   return (
     <Link to={id} smooth={true} duration={1000}>
-      <Flex className="switch" padding={"10px"} ml={"10px"}>
+      <Flex className="switch"   fontSize={{base : "10px", sm : "15px"}}   padding={"10px"} ml={"10px"}>
         {name}
       </Flex>
     </Link>

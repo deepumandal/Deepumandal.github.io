@@ -15,6 +15,7 @@ const Navbar = () => {
   return (
     
       <Flex
+ 
         m={"auto"}
         mt={"20px"}
         w={{
@@ -27,15 +28,16 @@ const Navbar = () => {
         }}
         borderColor="black"
       >
-        <Box color="thistheme.text">
           <Link to="Home">
-          <span className="entity">&lt;</span>
-          <span className="mercy">Mercy /</span>
-          <span className="entity">&gt;</span>
+        <Flex color="thistheme.text"  w={"100%"}  >
+          <Box fontSize={{base : "15px", sm : "25px"}} className="entity">&lt;</Box>
+          <Box fontSize={{base : "18px", sm : "34px"}} className="mercy">Mercy /</Box>
+          <Box fontSize={{base : "15px", sm : "25px"}} className="entity">&gt;</Box>
+        </Flex>
           </Link>
-        </Box>
         <Spacer />
-        <Flex alignItems={"center"}>
+        <Flex alignItems={"center"}  w={"80%"}>
+          <Spacer />
           {Nav.map((item) => {
             return <NSwitch key={item.id} name={item.name} id={item.id} />;
           })}

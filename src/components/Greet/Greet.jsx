@@ -20,8 +20,9 @@ const Greet = ({
       <Text
         fontSize={{ base: "30px", sm: "50px" }}
         lineHeight={{ base: "33px", sm: "55px" }}
-        w={{ base: "fit-content", sm: "80%" }}
+        w={{ base: "70%", sm: "80%" }}
         m={"auto"}
+        mt={{base : "50px"}}
         sx={{
           fontFamily: "'Open Sans', sans-serif",
           fontWeight: 700,

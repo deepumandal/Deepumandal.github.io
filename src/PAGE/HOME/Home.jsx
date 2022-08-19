@@ -90,7 +90,7 @@ const Home = () => {
       {/* what i do  */}
       <VStack mt={{base : "0px" , sm :"80px"}}>
         
-        <Fade bottom  distance={"20px"} duration={1000}>
+        <Fade bottom  distance={"40px"} duration={1000}>
         <Heading
         mb={{sm :"80px", base :"40px"}}
           sx={{
@@ -104,7 +104,8 @@ const Home = () => {
         </Heading>
         </Fade>
         <What {...skills.data[0]}/>
-        {/* <What {...skills.data[1]}/> */}
+        <br />
+        <What {...skills.data[1]}/>
       </VStack>
     </Box>
   );

@@ -409,7 +409,7 @@ const settings = {
       {
         title: "TYPING TEST",
         subtitle: " ",
-        logo_path: "download.png",
+        logo_path: "typing.png",
         certificate_link:
           "https://www.typing.com/apiv1/student/tests/205645423/133385846/certificate?language=en",
         alt_name: "Stanford University",
@@ -418,7 +418,7 @@ const settings = {
       {
         title: "Fullstack WEB Development",
         subtitle: "",
-        logo_path: "Masai-550x330.jpg",
+        logo_path: "Masai.png",
         certificate_link:
           "https://drive.google.com/file/d/15c74nCKl83lZd49HS5p0wEVhz3gxvyK2/view?usp=sharing",
         alt_name: "MASAI SCHOOL",
@@ -668,8 +668,8 @@ const settings = {
   const projectsHeader = {
     title: "Projects",
     description:
-      "My journey of project started by MASAI SCHOOL in it, The last week (constructive week) is my best week , this helps me a lot to improve my skils however i have been created Three Projects since join masai school",
-    avatar_image_path: "projects_image.svg",
+      "My journey of project started by MASAI SCHOOL in it, The last week (constructive week) is my best week , this helps me a lot to improve my skills however i have been created Three Projects since join masai school",
+    avatar_image_path: "projects.png",
   };
   
   const publicationsHeader = {
@@ -679,6 +679,121 @@ const settings = {
     avatar_image_path: "projects_image.svg",
   };
   
+// projects 
+
+const project = {
+  "data": [
+    {
+      "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
+      "name": "SHOP.COM",
+      "createdAt": "2022-04",
+      "url": "https://github.com/rameshmane7218/shop.com",
+      "description": [
+        "⚡SHOP . COM Marketplace offers great deals on clothes, beauty, health and nutrition, shoes, electronics, and more from over 1500 stores with one easy checkout.  ",
+        "⚡This is a collaboration project done by six members. The deadline for this project is one week  ",
+        "⚡  Tech used HTML5 and CSS3 & JAVASCRIPT "
+      ],
+      "isFork": false,
+      "link": "https://remarkable-klepon-b0037b.netlify.app/index.html",
+      "languages": [
+        {
+          "name": "HTML",
+          "iconifyClass": "html.png"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "css.png"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "javascript.png"
+        },
+        {
+          "name": "Git",
+          "iconifyClass": "github.png"
+        }
+      ]
+    },
+    {
+      "id": "MDEwOlJlcG9zaXRvcnkyNjkwNzUwMjM=",
+      "name": "Fitmeals",
+      "createdAt": "2022-05",
+      "url": "https://github.com/ashutosh1919/truvisory",
+      "description": [
+        "⚡Fitmeals is not a diet system that promotes cleanses, pills, preserved foods or any kind of disordered eating habits.  ",
+        "⚡This is a collaboration project done by six members. The deadline for this project is one week ",
+        "⚡ Tech used HTML 5, CSS 3 ,JAVASRIPT AND Jquery. "
+      ],
+      "isFork": false,
+      "link": "https://startling-croquembouche-7c4ba5.netlify.app/",
+      "languages": [
+        {
+          "name": "HTML 5",
+          "iconifyClass": "html.png"
+        },
+        {
+          "name": "CSS 3",
+          "iconifyClass": "css.png"
+        },
+        {
+          "name": " Advanced js ES6",
+          "iconifyClass": "javascript.png"
+        },
+        {
+          "name": "Git",
+          "iconifyClass": "github.png"
+        },
+        {
+          "name": "jQuery",
+          "iconifyClass": "jquery.png"
+        }
+      ]
+    },
+    {
+      "id": "MDEwOlJlcG9zaXRvcnkyNzM1MTI1NTE=",
+      "name": "MODESENS",
+      "createdAt": "2022-06",
+      "url": "https://github.com/ashutosh1919/ml-data-bot",
+      "description": [
+        "⚡ModeSens is your digital shopping assistant dedicated to saving you time and money. With ModeSens , you can view a product's availability ",
+        "⚡This is a collaboration project done by six members. The deadline for this project is one week ",
+        "⚡Tech used REACTJS, REDUX ,REDUX-THUNK, REACT ROUTER DOM ,CLASSNAME",
+        "⚡ BOOTSTRAP , CHACKRA UI JSON-SERVER AS MOCK SERVER"
+      ],
+      "isFork": false,
+      "link": "https://magnificent-bublanina-64e24e.netlify.app/",
+      "languages": [
+        {
+          "name": "Reactjs",
+          "iconifyClass": "react.png"
+        },
+        {
+          "name": "Bootstrap 5",
+          "iconifyClass": "bootstrap.png"
+        },
+        {
+          "name": "Chackra ui",
+          "iconifyClass": "chakraui.png"
+        },
+        {
+          "name": "Git",
+          "iconifyClass": "github.png"
+        },
+        {
+          "name": "Material ui",
+          "iconifyClass": "mui.png"
+        },
+        {
+          "name": "Json-Server",
+          "iconifyClass": "jsonserver.png"
+        }
+      ]
+    }
+  ]
+}
+
+
+
   // Contact Page
   const contactPageData = {
     contactSection: {
@@ -692,17 +807,17 @@ const settings = {
       subtitle:
         "For individual fundamental empowerment, I like to write powerful lessons that create impact on each of the reader individually to change the core of their character.",
       link: "https://medium.com/@deepak.studentid2030",
-      avatar_image_path: "blogs_image.svg",
+      avatar_image_path: "blog.png",
     },
     addressSection: {
       title: "Address",
       subtitle: "House 188,st-04/D-Block Basantpur Colony FBD HARIYANA",
-      avatar_image_path: "address_image.svg",
+      avatar_image_path: "address.png",
       location_map_link: "https://www.google.com/maps/@28.5006897,77.3152116,12z",
     },
     phoneSection: {
-      title: "Phone Number",
-      subtitle: "+91 7827119146",
+      name: "Phone Number",
+      number: "+91 7827119146",
     },
   };
   
@@ -719,5 +834,6 @@ const settings = {
     projectsHeader,
     publicationsHeader,
     contactPageData,
+    project
   };
   

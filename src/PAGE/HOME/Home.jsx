@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Flex,
   Grid,
   GridItem,
@@ -12,7 +13,7 @@ import { Fade } from "react-reveal";
 import Greetings from "../../components/greetings/Greetings";
 import Socials from "../../components/socialmedia/Socials";
 import What from "../../components/WhatIDo/What";
-import { skills } from "../../portfolio";
+import { seo, skills } from "../../portfolio";
 
 const Home = () => {
   return (
@@ -83,6 +84,19 @@ const Home = () => {
         >
           <Fade distance={"20px"} duration={1000} bottom>
             <Socials />
+            <Button
+      mt={"20px"}
+        bg={"thistheme.text"}
+        color={"#c5d3e1"}
+        className={"gitbun"}
+        transition="1s"
+        variant={"outline"}
+        colorScheme={"thistheme.text"}
+      >
+        <a href={seo.og.url} target={"_blank"}>
+          ⭐ Star Me On Github
+        </a>
+      </Button>
           </Fade>
         </GridItem>
       </Grid>

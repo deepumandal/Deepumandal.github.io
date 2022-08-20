@@ -19,10 +19,10 @@ const Navbar = () => {
         m={"auto"}
         mt={"20px"}
         w={{
-          base: "100%",
+          base: "90%",
           sm: "90%",
           md: "800px",
-          lg: "1000px",
+          lg: "900px",
           xl: "1100px",
           "2xl": "1400px",
         }}

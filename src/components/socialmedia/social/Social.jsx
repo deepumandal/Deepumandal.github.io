@@ -5,7 +5,7 @@ const Social = ({ name, link, fontAwesomeIcon, backgroundColor }) => {
 
   return (
     <Box
-    //   border={"1px"}
+    
       w={"41px"}
       h={"41px"}
       backgroundColor={backgroundColor}

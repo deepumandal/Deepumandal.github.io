@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './components/NAVBAR/Navbar';
-import {Box}  from "@chakra-ui/react"
+import {Box, Spacer}  from "@chakra-ui/react"
 import Home from './PAGE/HOME/Home';
 import Education from './PAGE/EDUCATION/Education';
 import Projects from './PAGE/PROJECTS/Projects';
@@ -16,33 +16,12 @@ function App() {
       <Home />
      
       <Education />
+      <br />
+      <br />
+      <br />
       <Projects />
       <Contact />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+     
     </Box>
   );
 }

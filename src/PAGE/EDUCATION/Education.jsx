@@ -8,9 +8,11 @@ import {
   Heading,
   Image,
   HStack,
+  Spacer,
 } from "@chakra-ui/react";
-import { degrees }from "../../portfolio"
-import  Degree from "../../components/Degree/Degree"
+import { certifications, degrees } from "../../portfolio";
+import Degree from "../../components/Degree/Degree";
+import Certificate from "../../components/certificates/Certificate";
 
 const Education = () => {
   return (
@@ -74,7 +76,34 @@ const Education = () => {
         </GridItem>
       </Grid>
 
-      <Degree {...degrees.degree[0]}/>
+      <Degree {...degrees.degree[0]} />
+
+      <Spacer />
+
+      <Heading color={"thistheme.text"} mt={{ base: "100px", sm: "100px" }}>
+        Certifications
+      </Heading>
+      <Flex
+      flexWrap={"wrap"}
+      gap={"20px"}
+      mt={{ base: "30px", sm: "30px" }}
+      w={{ base: "100%",
+      sm: "90%",
+      md: "800px",
+      lg: "1000px",
+      xl: "1100px",
+      "2xl": "1400px",}}
+      // border={"1px"}
+      m={"auto"}
+      height={"fit-content"}
+      
+      >
+      {certifications.certifications.map((item,i) => {
+        
+        return <Certificate key={i} {...item} />;
+      })}
+    </Flex>
+      
     </div>
   );
 };

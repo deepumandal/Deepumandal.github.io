@@ -23,24 +23,13 @@ const Socials = () => {
         flexWrap={"wrap"}
         alignContent={"center"}
         mb={"20px"}
-      >
+        justifyContent={"center"}
+>
         {socialMediaLinks.map((item, i) => {
           return <a  key={i} href={item.link} target={"_blank"}> <Social  {...item} /></a>
         })}
       </SimpleGrid>
-      <Button
-      mt={"20px"}
-        bg={"thistheme.text"}
-        color={"#c5d3e1"}
-        className={"gitbun"}
-        transition="1s"
-        variant={"outline"}
-        colorScheme={"thistheme.text"}
-      >
-        <a href={seo.og.url} target={"_blank"}>
-          ⭐ Star Me On Github
-        </a>
-      </Button>
+      
     </div>
   );
 };

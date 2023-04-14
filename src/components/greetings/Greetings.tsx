@@ -1,9 +1,8 @@
-import { flexbox } from "@chakra-ui/react";
 import React from "react";
-import { Fade } from "react-reveal";
+// import { Fade } from "react-reveal";
 import { greeting } from "../../portfolio";
 import Greet from "../Greet/Greet";
-const Greetings = () => {
+const Greetings: React.FC = () => {
   return (
     <div
       style={{
@@ -11,12 +10,12 @@ const Greetings = () => {
         height: "100%",
         display: "flex",
         alignItems: "end",
-        padding : "auto"
+        padding: "auto"
       }}
     >
-      <Fade bottom duration={1000} distance={"20px"}>
+      {/* <Fade bottom duration={1000} distance={"20px"}> */}
         <Greet {...greeting} />
-      </Fade>
+      {/* </Fade> */}
     </div>
   );
 };

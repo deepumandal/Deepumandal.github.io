@@ -4,15 +4,16 @@ import { socialMediaLinks } from "../../portfolio";
 import { seo } from "../../portfolio";
 import Social from "./social/Social";
 import "./this.css";
-const Socials = () => {
+const Socials: React.FC = () => {
   return (
-    <div style={{
-      display : "flex",
-      flexDirection : "column",
-      justifyContent : "space-evenly",
-      alignItems : "center",
-    }}>
-     
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-evenly",
+        alignItems: "center",
+      }}
+    >
       <SimpleGrid
         minChildWidth="41px"
         w={{ base: "80%" }}
@@ -24,12 +25,16 @@ const Socials = () => {
         alignContent={"center"}
         mb={"20px"}
         justifyContent={"center"}
->
+      >
         {socialMediaLinks.map((item, i) => {
-          return <a  key={i} href={item.link} target={"_blank"}> <Social  {...item} /></a>
+          return (
+            <a key={i} href={item.link} rel="noreferrer" target={"_blank"}>
+              {" "}
+              <Social {...item} />
+            </a>
+          );
         })}
       </SimpleGrid>
-      
     </div>
   );
 };

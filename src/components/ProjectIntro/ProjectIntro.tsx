@@ -1,10 +1,17 @@
 import { Grid, GridItem, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
 
-const ProjectIntro = ({ title, description, avatar_image_path }) => {
+
+interface ProjectIntroProps {
+  title: string,
+  description: string,
+  avatar_image_path: string,
+
+}
+const ProjectIntro: React.FC<ProjectIntroProps> = ({ title, description, avatar_image_path }) => {
   return (
     <Grid
-     
+
       w={{
         base: "100%",
         sm: "90%",
@@ -41,30 +48,30 @@ const ProjectIntro = ({ title, description, avatar_image_path }) => {
         />
       </GridItem>
       <GridItem area={"about"} >
-        <Heading 
-        sx={{
-            fontFamily : "Open Sans",
-            fontWeight : 700,
-            color : "thistheme.text"
-        }}
-        fontSize={{
-            base : "30px",
-            sm : "50px"
-        }}>{title}</Heading>
-        <Text 
-         sx={{
-            fontFamily : "Open Sans",
-            fontWeight : 700,
-            color : "thistheme.describe"
-        }}
-        w={{
-            base : "86%"
-        }}
-        m={"auto"}
-        fontSize={{
-            base : "16px",
-            sm : "20px"
-        }}
+        <Heading
+          sx={{
+            fontFamily: "Open Sans",
+            fontWeight: 700,
+            color: "thistheme.text"
+          }}
+          fontSize={{
+            base: "30px",
+            sm: "50px"
+          }}>{title}</Heading>
+        <Text
+          sx={{
+            fontFamily: "Open Sans",
+            fontWeight: 700,
+            color: "thistheme.describe"
+          }}
+          w={{
+            base: "86%"
+          }}
+          m={"auto"}
+          fontSize={{
+            base: "16px",
+            sm: "20px"
+          }}
         >{description}</Text>
       </GridItem>
     </Grid>

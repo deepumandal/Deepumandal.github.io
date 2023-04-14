@@ -1,15 +1,22 @@
-import { Box, Grid, GridItem, Image } from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
 import React from "react";
-const Social = ({ name, link, fontAwesomeIcon, backgroundColor }) => {
+interface SocialProps {
+  name: string,
+  link: string,
+  fontAwesomeIcon: string,
+  backgroundColor: string
+}
+
+const Social: React.FC<SocialProps> = ({ name, link, fontAwesomeIcon, backgroundColor }) => {
   //   console.log(backgroundColor);
 
   return (
     <Box
-    
+
       w={"41px"}
       h={"41px"}
       backgroundColor={backgroundColor}
-   
+
       borderRadius={"50%"}
       m={"auto"}
       display={"flex"}

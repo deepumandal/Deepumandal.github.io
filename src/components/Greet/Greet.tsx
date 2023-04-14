@@ -1,19 +1,25 @@
 import { HStack, Spacer, Text, VStack } from "@chakra-ui/react";
 import React from "react";
-
-const Greet = ({
+interface GreetProps {
+  title: string,
+  nickname: string,
+  subTitle: string,
+  resumeLink: string,
+  portfolio_repository: string,
+  githubProfile: string,
+}
+const Greet: React.FC<GreetProps> = ({
   title,
   nickname,
   subTitle,
-  resumelink,
+  resumeLink,
   portfolio_repository,
   githubProfile,
 }) => {
   return (
-    <VStack 
-    // border={"1px"}
+    <VStack
+      // border={"1px"}
       height="fit-content"
-     
       textAlign={{ sm: "left", md: "left" }}
     >
       {/* 50 */}
@@ -22,7 +28,7 @@ const Greet = ({
         lineHeight={{ base: "33px", sm: "55px" }}
         w={{ base: "70%", sm: "80%" }}
         m={"auto"}
-        mt={{base : "50px"}}
+        mt={{ base: "50px" }}
         sx={{
           fontFamily: "'Open Sans', sans-serif",
           fontWeight: 700,
@@ -51,8 +57,8 @@ const Greet = ({
       </Text>
 
       <Text
-      w={{ base: "fit-content", sm: "80%" }}
-      m={"auto"}
+        w={{ base: "fit-content", sm: "80%" }}
+        m={"auto"}
         pt={{ sm: "20px", base: "0px" }}
         fontSize={{ sm: "20px", base: "16px" }}
         lineHeight={{ sm: "35px", base: "26px" }}
@@ -61,7 +67,6 @@ const Greet = ({
           fontWeight: 500,
           color: "thistheme.describe",
           width: "80%",
-          
         }}
       >
         {" "}

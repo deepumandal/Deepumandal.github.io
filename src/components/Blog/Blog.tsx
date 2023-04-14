@@ -2,7 +2,14 @@ import { Button, Grid, GridItem, Heading, Image, Spacer, Text } from '@chakra-ui
 import React from 'react'
 import Socials from '../socialmedia/Socials'
 
-const Blog = ({title, subtitle,link,avatar_image_path}) => {
+
+interface blogProps {
+  title: string,
+  subtitle: string,
+  link: string,
+  avatar_image_path: string
+}
+const Blog: React.FC<blogProps> = ({ title, subtitle, link, avatar_image_path }) => {
   return (
     <div>
       <Grid
@@ -42,7 +49,7 @@ const Blog = ({title, subtitle,link,avatar_image_path}) => {
         >
           {" "}
           <Image
-        //   border={"1px"}
+            //   border={"1px"}
             borderRadius={"10px"}
             w={{
               sm: "450px",
@@ -94,9 +101,9 @@ const Blog = ({title, subtitle,link,avatar_image_path}) => {
           <Socials />
           <Spacer />
           <Button
-          sx={{
-            target : "_blank"
-          }}
+            sx={{
+              target: "_blank"
+            }}
             bg={"thistheme.text"}
             color={"white"}
             _hover={{
@@ -105,10 +112,10 @@ const Blog = ({title, subtitle,link,avatar_image_path}) => {
               borderColor: "thistheme.text",
               color: "thistheme.text",
             }}
-            size ={"md"}
+            size={"md"}
           >
             <a target={"_blank"} href={link} >
-            See my resume
+              See my resume
             </a>
           </Button>
         </GridItem>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Flex, Spacer } from "@chakra-ui/react";
+import {  Button, Flex, Spacer } from "@chakra-ui/react";
 import { project, projectsHeader, seo } from "../../portfolio";
 import ProjectIntro from "../../components/ProjectIntro/ProjectIntro";
 import Project from "../../components/Project/Project";

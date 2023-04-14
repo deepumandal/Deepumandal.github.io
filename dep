@@ -1,7 +1,17 @@
 axios
 redux
 react-redux
-react-reveal
+react-reveal alternate
+
+Framer Motion
+React Spring
+React Pose
+React Transition Group
+Anime.js
+GSAP
+
+
+
 react-router-dom@6
 @chakra-ui/react
 @emotion/react

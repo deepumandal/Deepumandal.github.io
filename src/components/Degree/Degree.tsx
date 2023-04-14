@@ -1,7 +1,18 @@
-import { Box, Button, Grid, GridItem, Image, Spacer, Text, VStack } from "@chakra-ui/react";
+import { Button, Grid, GridItem, Image, Spacer, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 
-const Degree = ({
+interface degreeProps {
+  title: string,
+  subtitle: string,
+  logo_path: string,
+  alt_name: string,
+  duration: string,
+  descriptions: string[],
+  website_link: string,
+}
+
+
+const Degree: React.FC<degreeProps> = ({
   title,
   subtitle,
   logo_path,
@@ -47,35 +58,35 @@ const Degree = ({
             />
           </div>
         </GridItem>
-        <GridItem height={{sm: "200px"}}
-           w={{ sm: "650px", base: "100%" }}>
+        <GridItem height={{ sm: "200px" }}
+          w={{ sm: "650px", base: "100%" }}>
           <VStack
-          borderRadius={"5px"}
-          
-          overflow={"hidden"}
+            borderRadius={"5px"}
+
+            overflow={"hidden"}
             // border={"1px"}
             w={"100%"}
             boxShadow={"rgba(0, 0, 0, 0.55) 0px  0px 15px"}
             h={"100%"}
           >
-            <Grid 
-           w={"100%"}
-            p={"10px"}
-            gridTemplateColumns={{
-              base : 'repeat(1,1fr)',
-              sm :'repeat(3,1fr)'
-            }}
-            gridTemplateRows={{
-              base : 'repeat(3,1fr)',
-              sm :'repeat(2,1fr)'
-            }}
-            gridTemplateAreas={{
-              base :  ` "title " "subtitle" "duration"  `,
-              sm : `  "title title duration" "subtitle subtitle subtitle"`
-            }}
-            bg={"#84b7d5"}
+            <Grid
+              w={"100%"}
+              p={"10px"}
+              gridTemplateColumns={{
+                base: 'repeat(1,1fr)',
+                sm: 'repeat(3,1fr)'
+              }}
+              gridTemplateRows={{
+                base: 'repeat(3,1fr)',
+                sm: 'repeat(2,1fr)'
+              }}
+              gridTemplateAreas={{
+                base: ` "title " "subtitle" "duration"  `,
+                sm: `  "title title duration" "subtitle subtitle subtitle"`
+              }}
+              bg={"#84b7d5"}
             >
-              <GridItem  area={"title"}>
+              <GridItem area={"title"}>
                 <Text
                   fontSize={{ base: "18px", sm: "22px" }}
                   sx={{
@@ -103,7 +114,7 @@ const Degree = ({
                   {subtitle}
                 </Text>
               </GridItem>
-              <GridItem  area={"duration"}>
+              <GridItem area={"duration"}>
                 <Text
                   fontSize={{ base: "20px", sm: "16px" }}
                   textAlign={"right"}
@@ -119,18 +130,18 @@ const Degree = ({
               </GridItem>
             </Grid>
 
-            
-              {descriptions.map((item,i) => {
-                 return <Text key={i}  w={"100%"} textAlign={"left"}>
-                  {item}
 
-                </Text>
-              })}
+            {descriptions.map((item, i) => {
+              return <Text key={i} w={"100%"} textAlign={"left"}>
+                {item}
+
+              </Text>
+            })}
             <Spacer />
-            <Button onClick={()=>window.location.href=website_link}  alignSelf={"right"} bg={"#84b7d5"}  size='md'>
+            <Button onClick={() => window.location.href = website_link} alignSelf={"right"} bg={"#84b7d5"} size='md'>
               Visit Website
             </Button>
-            <Spacer/>
+            <Spacer />
           </VStack>
         </GridItem>
       </Grid>
@@ -139,28 +150,3 @@ const Degree = ({
 };
 
 export default Degree;
-
-{
-  /* <Text
-fontSize={{ base: "20px", sm: "23px" }}
-sx={{
-  fontFamily: "Open Sans",
-  fontWeight: 700,
-  color: "thistheme.text",
-}}
->
-{" "}
-{title}
-</Text>{" "}
-<Text
-fontSize={{ base: "20px", sm: "16px" }}
-sx={{
-  fontFamily: "Open Sans",
-  fontWeight: 700,
-  color: "thistheme.text",
-}}
-> {duration}</Text>{" "}
-<Text>
-1
-</Text> */
-}

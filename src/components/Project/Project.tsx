@@ -1,9 +1,6 @@
 import {
-  AlertDescription,
-  Box,
   Flex,
   Heading,
-  HStack,
   Image,
   Spacer,
   Text,
@@ -11,7 +8,21 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 
-const Project = ({
+type languages = {
+  name: string,
+  iconifyClass: string
+}
+interface ProjectProps {
+  id: string,
+  name: string,
+  url: string,
+  createdAt: string,
+  description: string[],
+  link: string,
+  languages: languages[]
+}
+
+const Project: React.FC<ProjectProps> = ({
   id,
   name,
   createdAt,
@@ -21,19 +32,18 @@ const Project = ({
   languages,
 }) => {
   return (
-    <VStack 
+    <VStack
       bg={"#a6e1fa "}
       w={"450px"}
       align={"left"}
       p={"10px"}
-      pl={{base : "20px", sm: "auto"}}
-      pr={{base : "20px", sm: "auto"}}
+      pl={{ base: "20px", sm: "auto" }}
+      pr={{ base: "20px", sm: "auto" }}
       textAlign={"left"}
       boxShadow={"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}
     >
       <Heading
-        onClick={() => (window.location.href = url)}
-        target={"_blank"}
+        onClick={() => (window.open(url, '_blank'))}
         fontSize={{
           base: "16px",
           sm: "25px",
@@ -55,7 +65,7 @@ const Project = ({
       {description.map((item) => {
         return (
           <Text
-            onClick={() => (window.location.href = link)}
+            onClick={() => (window.open(link, "_blank"))}
             sx={{
               fontFamily: "Open Sans",
               fontWeight: 400,
@@ -69,9 +79,9 @@ const Project = ({
         );
       })}
       <br />
-      <Flex 
-      
-      flexDir={{base : "column", sm : "row"}}
+      <Flex
+
+        flexDir={{ base: "column", sm: "row" }}
       >
         <Text
           sx={{
@@ -85,12 +95,12 @@ const Project = ({
           Created on {createdAt}
         </Text>
         <Spacer />
-        <Flex  gap={"15px"} flexWrap={"wrap"} w={{base : "90%", sm :"50%"}}>
-{
-    languages.map((item,i)=>{
-        return <Image src={`./images/${item.iconifyClass}`} w={"55px"} />
-    })
-}
+        <Flex gap={"15px"} flexWrap={"wrap"} w={{ base: "90%", sm: "50%" }}>
+          {
+            languages.map((item, i) => {
+              return <Image src={`./images/${item.iconifyClass}`} w={"55px"} />
+            })
+          }
 
 
         </Flex>

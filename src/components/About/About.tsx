@@ -1,17 +1,21 @@
-import {
-  Button,
-  Flex,
-  Grid,
-  GridItem,
-  Heading,
-  Image,
-  Spacer,
-  Text,
-} from "@chakra-ui/react";
+import { Button, Grid, GridItem, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
-import Socials from "../socialmedia/Socials";
-
-const ContactIntro = ({ title, profile_image_path, description }) => {
+interface aboutProps {
+  name: string;
+  number: string;
+  title: string;
+  subtitle: string;
+  avatar_image_path: string;
+  location_map_link: string;
+}
+const About: React.FC<aboutProps> = ({
+  name,
+  number,
+  title,
+  subtitle,
+  avatar_image_path,
+  location_map_link,
+}) => {
   return (
     <div>
       <Grid
@@ -41,6 +45,7 @@ const ContactIntro = ({ title, profile_image_path, description }) => {
         }}
       >
         <GridItem
+          // border={"1px"}
           area={"image"}
           width={{
             base: "100%",
@@ -53,25 +58,26 @@ const ContactIntro = ({ title, profile_image_path, description }) => {
           <Image
             borderRadius={"10px"}
             w={{
-              sm: "250px",
-              base: "200px",
+              sm: "650px",
+              base: "100%",
             }}
-            src={`./images/${profile_image_path}`}
+            m={"auto"}
+            src={`./images/${avatar_image_path}`}
           />{" "}
         </GridItem>
         <GridItem area={"about"}>
           <Heading
             fontSize={{
-              sm: "50px",
-              base: "30px",
+              sm: "30px",
+              base: "26px",
             }}
             lineHeight={{
               sm: "95px",
-              base: "65px",
+              base: "60px",
             }}
             sx={{
               fontFamily: "Open Sans",
-              fontWeight: 400,
+              fontWeight: 500,
               color: "thistheme.text",
             }}
           >
@@ -80,12 +86,12 @@ const ContactIntro = ({ title, profile_image_path, description }) => {
           <Text
             w={{
               sm: "90%",
-              base: "80",
+              base: "80%",
             }}
             m={"auto"}
             fontSize={{
               sm: "20px",
-              base: "16px",
+              base: "14px",
             }}
             lineHeight={{
               sm: "30px",
@@ -96,15 +102,54 @@ const ContactIntro = ({ title, profile_image_path, description }) => {
               color: "thistheme.describe",
             }}
           >
-            {description}
+            {subtitle}
           </Text>
 
-          <Socials />
-          <Spacer />
+          <Heading
+            fontSize={{
+              sm: "30px",
+              base: "25px",
+            }}
+            lineHeight={{
+              sm: "95px",
+              base: "60px",
+            }}
+            sx={{
+              fontFamily: "Open Sans",
+              fontWeight: 500,
+              color: "thistheme.text",
+            }}
+          >
+            {name}
+          </Heading>
+
+          <Text
+            w={{
+              sm: "90%",
+              base: "80%",
+            }}
+            m={"auto"}
+            fontSize={{
+              sm: "20px",
+              base: "16px",
+            }}
+            lineHeight={{
+              sm: "30px",
+              base: "46px",
+            }}
+            sx={{
+              fontFamily: "Open Sans",
+              fontWeight: 400,
+              color: "thistheme.describe",
+            }}
+          >
+            {number}
+          </Text>
+
           <Button
-          sx={{
-            target : "_blank"
-          }}
+            sx={{
+              target: "_blank",
+            }}
             bg={"thistheme.text"}
             color={"white"}
             _hover={{
@@ -113,10 +158,15 @@ const ContactIntro = ({ title, profile_image_path, description }) => {
               borderColor: "thistheme.text",
               color: "thistheme.text",
             }}
-            size ={"md"}
+            size={"md"}
+            margin={"20px"}
           >
-            <a target={"_blank"} href="https://drive.google.com/file/d/1qXnUfDG8s7TwCpwOMTFgH2Wi7fJzyB7l/view">
-            See my resume
+            <a
+              target={"_blank"}
+              rel='noreferrer'
+              href="https://www.google.com/maps/@28.5006897,77.3152116,12z"
+            >
+              Visite On google Map
             </a>
           </Button>
         </GridItem>
@@ -125,4 +175,4 @@ const ContactIntro = ({ title, profile_image_path, description }) => {
   );
 };
 
-export default ContactIntro;
+export default About;

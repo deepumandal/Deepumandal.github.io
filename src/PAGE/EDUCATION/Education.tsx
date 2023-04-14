@@ -7,14 +7,13 @@ import {
   Text,
   Heading,
   Image,
-  HStack,
   Spacer,
 } from "@chakra-ui/react";
 import { certifications, degrees } from "../../portfolio";
-import Degree from "../../components/Degree/Degree";
+// import Degree from "../../components/Degree/Degree";
 import Certificate from "../../components/certificates/Certificate";
 
-const Education = () => {
+const Education: React.FC = () => {
   return (
     <div id="Education">
       <Grid
@@ -48,7 +47,7 @@ const Education = () => {
           display={"flex"}
           justifyContent={"center"}
           pt={{ sm: "100px" }}
-          alignitems={"center"}
+          alignItems={"center"}
         >
           <Box>
             <Text
@@ -76,7 +75,7 @@ const Education = () => {
         </GridItem>
       </Grid>
 
-      <Degree {...degrees.degree[0]} />
+      {/* <Degree {...degrees?.degree[0]} /> */}
 
       <Spacer />
 
@@ -84,26 +83,28 @@ const Education = () => {
         Certifications
       </Heading>
       <Flex
-      flexWrap={"wrap"}
-      gap={"20px"}
-      mt={{ base: "30px", sm: "30px" }}
-      w={{ base: "100%",
-      sm: "90%",
-      md: "800px",
-      lg: "1000px",
-      xl: "1100px",
-      "2xl": "1400px",}}
-      // border={"1px"}
-      m={"auto"}
-      height={"fit-content"}
-      
+        flexWrap={"wrap"}
+        gap={"20px"}
+        mt={{ base: "30px", sm: "30px" }}
+        w={{
+          base: "100%",
+          sm: "90%",
+          md: "800px",
+          lg: "1000px",
+          xl: "1100px",
+          "2xl": "1400px",
+        }}
+        // border={"1px"}
+        m={"auto"}
+        height={"fit-content"}
+
       >
-      {certifications.certifications.map((item,i) => {
-        
-        return <Certificate key={i} {...item} />;
-      })}
-    </Flex>
-      
+        {certifications.certifications.map((item, i) => {
+
+          return <Certificate key={i} {...item} />;
+        })}
+      </Flex>
+
     </div>
   );
 };

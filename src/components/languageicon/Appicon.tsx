@@ -17,7 +17,7 @@ const Appicon: React.FC<AppiconProps> = ({ skillName, fontAwesomeClassname, styl
   return (
     <div >
       <Image
-        width={"70px"}
+        width={"60px"}
         margin={"5px"}
         src={`./images/${fontAwesomeClassname}`}
       />

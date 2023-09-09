@@ -17,26 +17,6 @@ import { seo, skills } from "../../portfolio";
 const Home: React.FC = () => {
   return (
     <Box>
-      {/* <Flex  w={{
-          base: "100%",
-          sm: "90%",
-          md: "800px",
-          lg: "1000px",
-          xl: "1100px",
-          "2xl": "1400px",
-        }} 
-        height={"fit-content"}
-        border={"1px"}
-        justifyContent={"space-between"}
-        m={"auto"}
-        id="Home">
-        
-          <Greetings  />
-          <Fade >
-            <Img border={"1px"} src={greeting}/>
-          </Fade>
-     
-      </Flex> */}
       <Grid
         id={"Home"}
         height={{ base: "800px", sm: "600px" }}
@@ -101,7 +81,7 @@ const Home: React.FC = () => {
       </Grid>
 
       {/* what i do  */}
-      <VStack mt={{ base: "0px", sm: "80px" }}>
+      <VStack mt={{ base: "1rem", sm: "200px" }}>
 
         {/* <Fade bottom  distance={"40px"} duration={1000}> */}
         <Heading

@@ -13,13 +13,8 @@ function App(): JSX.Element {
       {/* <Fade top> */}
       <Navbar />
       {/* </Fade> */}
-
       <Home />
-
       <Education />
-      <br />
-      <br />
-      <br />
       <Projects />
       <Contact />
 

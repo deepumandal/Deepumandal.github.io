@@ -12,6 +12,7 @@ import {
 import { certifications, degrees } from "../../portfolio";
 // import Degree from "../../components/Degree/Degree";
 import Certificate from "../../components/certificates/Certificate";
+import Degree from "../../components/Degree/Degree";
 
 const Education: React.FC = () => {
   return (
@@ -75,9 +76,9 @@ const Education: React.FC = () => {
         </GridItem>
       </Grid>
 
-      {/* <Degree {...degrees?.degree[0]} /> */}
+      <Degree {...degrees?.degree[0]} />
 
-      <Spacer />
+      {/* <Spacer /> */}
 
       <Heading color={"thistheme.text"} mt={{ base: "100px", sm: "100px" }}>
         Certifications

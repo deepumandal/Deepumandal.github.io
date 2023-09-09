@@ -34,8 +34,10 @@ const Navbar: React.FC = () => {
         color="thistheme.text"
         w={"fit-content"}
       >
-        <Box fontSize={{ base: "13px", sm: "25px" }} className="entity">
-          &lt;
+        <Box fontSize={{ base: "13px", sm: "25px" }}
+        // className="entity"
+        >
+          &lt;{" "}
         </Box>
         <Box
           onClick={() => {
@@ -44,15 +46,20 @@ const Navbar: React.FC = () => {
           fontSize={{ base: "13px", sm: "34px" }}
           className="mercy"
         >
-          Deepu
+          {/* Codding / */}
+          {" "} DevDynamo
+          {" "}
+          {/* <Image src={"./images/codingIsLife.png"} /> */}
         </Box>
 
-        <Box fontSize={{ base: "13px", sm: "25px" }} className="entity">
-          &gt;
+        <Box fontSize={{ base: "13px", sm: "25px" }}
+        // className="entity"
+        >
+          {" "}/&gt;
         </Box>
       </Flex>
 
-      
+
       <Flex alignItems={"center"} justifyContent={"flex-end"} w={"70%"}>
 
         {pathNavigation.map((item) => {
@@ -60,7 +67,7 @@ const Navbar: React.FC = () => {
           return (
             item.active && (
               <NSwitch
-                isActive={location.pathname == item.path}
+                isActive={location.pathname === item.path}
                 active={item.active}
                 path={item.path}
                 key={item.id}

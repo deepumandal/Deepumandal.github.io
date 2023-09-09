@@ -1,4 +1,4 @@
-import { Button, Grid, GridItem, Heading, Image, Text } from "@chakra-ui/react";
+import {  Grid, GridItem, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
 interface aboutProps {
   name: string;
@@ -6,7 +6,7 @@ interface aboutProps {
   title: string;
   subtitle: string;
   avatar_image_path: string;
-  location_map_link: string;
+  // location_map_link: string;
 }
 const About: React.FC<aboutProps> = ({
   name,
@@ -14,7 +14,7 @@ const About: React.FC<aboutProps> = ({
   title,
   subtitle,
   avatar_image_path,
-  location_map_link,
+  // location_map_link,
 }) => {
   return (
     <div>
@@ -146,7 +146,7 @@ const About: React.FC<aboutProps> = ({
             {number}
           </Text>
 
-          <Button
+          {/* <Button
             sx={{
               target: "_blank",
             }}
@@ -168,7 +168,7 @@ const About: React.FC<aboutProps> = ({
             >
               Visite On google Map
             </a>
-          </Button>
+          </Button> */}
         </GridItem>
       </Grid>
     </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React  from "react";
 import { Box, Image } from "@chakra-ui/react";
 
 
@@ -59,7 +59,7 @@ const TopButton: React.FC<TopButtonProps> = ({ theme }) => {
     // };
 
 
-    const [hover, setHover] = useState(false)
+    
     return (
         <Box
             as="div"
@@ -80,7 +80,7 @@ const TopButton: React.FC<TopButtonProps> = ({ theme }) => {
             // onMouseEnter={onMouseEnter}
             // onMouseLeave={onMouseLeave}
         >
-            <Image width={"20px"} src={`/images/${hover ? "topArrow1.png" : "topArrow.png"}`} alt="toparrow" />
+            <Image width={"20px"} src={`./images/toparrow.png`} alt="toparrow" />
         </Box>
     );
 };

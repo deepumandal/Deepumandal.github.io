@@ -20,8 +20,8 @@ const seo = {
 //Home Page
 const greeting = {
   title: "Deepak Kumar Mandal",
-  logo_name: "Mercy",
-  nickname: "Deepuuuuu",
+  logo_name: "DevDynamo",
+  nickname: "DevDynamo",
   subTitle:
     "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   resumeLink:
@@ -367,7 +367,7 @@ const skills = {
         {
           skillName: "Linux OS",
           fontAwesomeClassname: "Linux.png",
-          imgurl: "Linux.png",
+          imgurl: "linux.png",
           style: {
             color: "#E34F26",
           },
@@ -742,7 +742,7 @@ const competitiveSites = {
       style: {
         color: "#2EC866",
       },
-      profileLink: "https://www.hackerrank.com/layman_brother",
+      profileLink: "https://leetcode.com/mercydsasolver/",
     },
     {
       siteName: "HackerRank",
@@ -750,7 +750,7 @@ const competitiveSites = {
       style: {
         color: "#2EC866",
       },
-      profileLink: "https://www.hackerrank.com/layman_brother",
+      profileLink: "https://www.hackerrank.com/deepak_studenti1",
     },
     {
       siteName: "Codechef",
@@ -758,7 +758,7 @@ const competitiveSites = {
       style: {
         color: "#5B4638",
       },
-      profileLink: "https://www.codechef.com/users/ashutosh_1919",
+      profileLink: "https://www.codechef.com/users/deepak_the_dsa",
     },
     {
       siteName: "Codeforces",
@@ -766,7 +766,7 @@ const competitiveSites = {
       style: {
         color: "#1F8ACB",
       },
-      profileLink: "http://codeforces.com/profile/layman_brother",
+      profileLink: "https://codeforces.com/profile/deepak.studentid2030",
     },
     // {
     //   siteName: "Hackerearth",
@@ -796,13 +796,26 @@ const degrees = {
       alt_name: "Amity University",
       duration: "2023 - Present",
       descriptions: ["⚡ I am currently Pursuing BCA from the Amity University Online"],
-      website_link: "https://amityonline.com/",
+      website_link: "https://amityonline.com/"
+    },
+    {
+      title: "Masai School",
+      subtitle: "Full Stack Developer",
+      logo_path: "masaischool.jpg",
+      alt_name: "Masai School",
+      duration: "2022",
+      descriptions: [
+        "⚡ Successfully solved over 500 Data Structure and Algorithms (DSA) problems over Masai lms.",
+        "⚡Accumulated 2000+ hours of coding learning.",
+        "⚡Completed more than 50 hands-on projects, including 6+ cloned projects, to reinforce technical skills."
+      ],
+      website_link: "https://masaischool.com/",
     },
   ],
 };
 
 const certifications = {
-  isShow : false,
+  isShow: false,
   certifications: [
     // {
     //   title: "TYPING TEST",
@@ -1066,7 +1079,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My journey of project started by MASAI SCHOOL in it, The last week (constructive week) is my best week , this helps me a lot to improve my skills however i have been created Three Projects since join masai school",
+    "I create Full Stack Projects, deploying them as web apps with cloud tech. Prioritizing security and performance, I emphasize documentation, testing, and automation. Feedback-driven and organized, I'm dedicated to continuous learning for project excellence. ❣️",
   avatar_image_path: "projects.png",
 };
 
@@ -1082,10 +1095,107 @@ const publicationsHeader = {
 const project = {
   "data": [
     {
+      "id": "M1DEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
+      "name": "React Webpack Starter",
+      "createdAt": "2023-03",
+      "url": "https://github.com/deepumandal/react-webpack-configuration",
+      "description": [
+        "⚡It Serves educational resource for setting up your custum React application ",
+        "⚡It provides step-by-step guidance on configuring your React project and installing the necessary dependencies.",
+        "⚡React Webpack Starter utilizes technologies such as React, Babel, Webpack 5, and more. For a comprehensive view, we recommend checking out our GitHub repository "
+      ],
+      "isFork": false,
+      "link": "https://deepumandal.github.io/react-webpack-configuration/",
+      "languages": [
+        {
+          "name": "HTML",
+          "iconifyClass": "html.png"
+        },
+        {
+          "name": "Webpack 5",
+          "iconifyClass": "webpack.png"
+        },
+
+        {
+          "name": "file loader",
+          "iconifyClass": "fileloader.png"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "javascript.png"
+        },
+        {
+          "name": "Git",
+          "iconifyClass": "github.png"
+        }
+        ,
+        {
+          "name": "React",
+          "iconifyClass": "react.png"
+        },
+
+        {
+          "name": "babel",
+          "iconifyClass": "babel.png"
+        },
+
+      ]
+    },
+    {
+      "id": "M1DEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
+      "name": "Suger Cosmetic",
+      "createdAt": "2023-03",
+      "url": "https://github.com/deepumandal/sugarcosmetic",
+      "description": [
+        "⚡It Serves educational resource for setting up your custum React application ",
+        "⚡It provides step-by-step guidance on configuring your React project and installing the necessary dependencies.",
+        "⚡React Webpack Starter utilizes technologies such as React, Babel, Webpack 5, and more. For a comprehensive view, we recommend checking out our GitHub repository "
+      ],
+      "isFork": false,
+      "link": "https://sugarcosmetucs.vercel.app/",
+      "languages": [
+        {
+          "name": "HTML",
+          "iconifyClass": "html.png"
+        },
+        {
+          "name": "Next Js",
+          "iconifyClass": "next.png"
+        },
+        {
+          "name": "Google api's",
+          "iconifyClass": "googleapi.png"
+        },
+        {
+          "name": "fast two sms",
+          "iconifyClass": "fasttwosms.png"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "javascript.png"
+        },
+        {
+          "name": "Git",
+          "iconifyClass": "github.png"
+        }
+        ,
+        {
+          "name": "React",
+          "iconifyClass": "react.png"
+        },
+
+        {
+          "name": "node mailer",
+          "iconifyClass": "nodemailer.png"
+        },
+
+      ]
+    },
+    {
       "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
       "name": "SHOP.COM",
       "createdAt": "2022-04",
-      "url": "https://github.com/rameshmane7218/shop.com",
+      "url": "https://github.com/deepumandal/shop.com",
       "description": [
         "⚡SHOP . COM Marketplace offers great deals on clothes, beauty, health and nutrition, shoes, electronics, and more from over 1500 stores with one easy checkout.  ",
         "⚡This is a collaboration project done by six members. The deadline for this project is one week  ",
@@ -1179,7 +1289,7 @@ const project = {
         },
         {
           "name": "Material ui",
-          "iconifyClass": "mui.png"
+          "iconifyClass": "materialui.png"
         },
         {
           "name": "Json-Server",
@@ -1196,22 +1306,22 @@ const project = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "profile_image_path.jpeg",
+    profile_image_path: "profile_image_path.png",
     description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, Android, Cloud and Opensource Development.",
+      "I'm dedicated to helping people become better through knowledge. I create lessons that are carefully designed to touch each person personally, so they can change and improve who they are. My main aim is to inspire long-lasting and meaningful changes in everyone who reads what I write.",
   },
   blogSection: {
     title: "Blogs",
     subtitle:
-      "For individual fundamental empowerment, I like to write powerful lessons that create impact on each of the reader individually to change the core of their character.",
+      "I enjoy writing lessons that can empower people on a personal level. These lessons are meant to deeply affect each reader and help them change and grow as a person. My main aim is to inspire meaningful and lasting changes in anyone who reads my work.",
     link: "https://medium.com/@deepak.studentid2030",
     avatar_image_path: "blog.png",
   },
   addressSection: {
     title: "Address",
-    subtitle: "House 188,st-04/D-Block Basantpur Colony FBD HARIYANA",
+    subtitle: "I'm originally from Delhi, but I currently live in Balgore.",
     avatar_image_path: "address.png",
-    location_map_link: "https://www.google.com/maps/@28.5006897,77.3152116,12z",
+    // location_map_link: "https://www.google.com/maps/@28.5006897,77.3152116,12z",
   },
   phoneSection: {
     name: "Phone Number",

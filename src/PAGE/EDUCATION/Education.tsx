@@ -78,6 +78,7 @@ const Education: React.FC = () => {
       </Grid>
 
       <Degree {...degrees?.degree[0]} />
+      <Degree {...degrees?.degree[1]} />
 
       {/* <Spacer /> */}
       {

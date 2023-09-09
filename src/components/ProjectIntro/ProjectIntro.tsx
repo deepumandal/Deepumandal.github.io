@@ -52,7 +52,8 @@ const ProjectIntro: React.FC<ProjectIntroProps> = ({ title, description, avatar_
           sx={{
             fontFamily: "Open Sans",
             fontWeight: 700,
-            color: "thistheme.text"
+            color: "thistheme.text",
+            margin : "2rem"
           }}
           fontSize={{
             base: "30px",
@@ -61,8 +62,9 @@ const ProjectIntro: React.FC<ProjectIntroProps> = ({ title, description, avatar_
         <Text
           sx={{
             fontFamily: "Open Sans",
-            fontWeight: 700,
+            fontWeight: 500,
             color: "thistheme.describe"
+            
           }}
           w={{
             base: "86%"

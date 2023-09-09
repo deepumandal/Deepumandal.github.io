@@ -6,13 +6,21 @@ import Home from './PAGE/HOME/Home';
 import Education from './PAGE/EDUCATION/Education';
 import Projects from './PAGE/PROJECTS/Projects';
 import Contact from './PAGE/CONTACT/Contact';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+// import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Splash from './PAGE/SPLASH/Splash';
-import theme, { appTheme } from './components/theme/theme';
+import { appTheme } from './components/theme/theme';
 import Footer from './components/Footer/Footer';
 import TopButton from './components/TopButton/TopButton';
 // import { Fade } from 'react-reveal';
+import { HashRouter, Route, Routes } from "react-router-dom";
+
+
+
 function App(): JSX.Element {
+
+
+
+
   return (
     <Box className="App" border={"1px"} borderColor={"#edf9fe"} bg={"thistheme.background"} >
       {/* <Fade top> */}
@@ -22,7 +30,7 @@ function App(): JSX.Element {
       <Education />
       <Projects />
       <Contact /> */}
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path='/' element={<Splash />} />
@@ -33,8 +41,24 @@ function App(): JSX.Element {
         </Routes>
         <Footer theme={appTheme} />
         <TopButton theme={appTheme} />
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <HashRouter basename="/">
 
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Splash />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/education' element={<Education />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/Contact' element={<Contact />} />
+        </Routes>
+        <Footer theme={appTheme} />
+        <TopButton theme={appTheme} />
+
+
+
+
+      </HashRouter>
     </Box>
   );
 }

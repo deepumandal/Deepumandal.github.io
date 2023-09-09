@@ -1,30 +1,29 @@
 import React from "react";
-import { Link } from "react-scroll";
 import { Flex } from "@chakra-ui/react";
 import "./this.css";
+import { Link } from "react-router-dom"
 
 interface NSwitchProps {
-  name: string;
-  id: string;
+  name: string, id: string, path: string, active: Boolean, isActive: Boolean
 }
 
-const NSwitch: React.FC<NSwitchProps> = ({ id, name }) => {
-  // const [select, setselect] = useState("Home");
-  // const setcolor = (name: string) => {
-  //   setselect(name);
-  // };
+const NSwitch: React.FC<NSwitchProps> = ({ path, name, isActive }) => {
 
   return (
-    <Link to={id} smooth={true} duration={1000}>
+    <Link to={path}>
       <Flex
         className="switch"
         fontSize={{ base: "10px", sm: "15px" }}
-        padding={"10px"}
-        ml={"10px"}
+        padding={{ base : "5px", sm : "10px"}}
+        ml={{base : "3px", md : "3px", lg : "10px"}}
+        sx={{
+          transform: isActive && "scale(1.1)",
+          transistion: isActive && "5s"
+        }}
       >
         {name}
       </Flex>
-    </Link>
+    </Link >
   );
 };
 

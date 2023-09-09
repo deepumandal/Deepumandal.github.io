@@ -19,6 +19,7 @@ const Certificate: React.FC<certificateProps> = ({
 }) => {
   return (
     <Flex
+    onClick={()=> window.open(certificate_link, "_blank")}
       flexWrap={"wrap"}
       // gap={"20px"}
       mt={{ base: "30px", sm: "30px" }}

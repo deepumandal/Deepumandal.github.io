@@ -53,7 +53,7 @@ const Greet: React.FC<GreetProps> = ({
         }}
       >
         {" "}
-        <i>&#40;{nickname} &#41;</i>
+        <i>&#40; {nickname} &#41;</i>
       </Text>
 
       <Text

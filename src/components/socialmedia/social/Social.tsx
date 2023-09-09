@@ -8,15 +8,11 @@ interface SocialProps {
 }
 
 const Social: React.FC<SocialProps> = ({ name, link, fontAwesomeIcon, backgroundColor }) => {
-  //   console.log(backgroundColor);
-
   return (
     <Box
-
       w={"41px"}
       h={"41px"}
       backgroundColor={backgroundColor}
-
       borderRadius={"50%"}
       m={"auto"}
       display={"flex"}

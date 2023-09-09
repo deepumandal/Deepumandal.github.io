@@ -1,17 +1,14 @@
-import { Box, Flex, Spacer } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import React from "react";
 import "./navbar.css";
-import { Link } from "react-router-dom";
 import NSwitch from "../NAV_SWITCH/NSwitch";
 // import { Fade } from "react-reveal";
-const Navbar: React.FC = ()=> {
-  let Nav = [
-    { name: "Home", id: "Home" },
-    { name: "Education", id: "Education" },
-    { name: "Projects", id: "Projects" },
-    { name: "Contact Me", id: "Contact Me" },
-  ];
+import { useLocation, useNavigate } from "react-router-dom";
+import { pathNavigation } from "../../portfolio";
 
+const Navbar: React.FC = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
   return (
     <Flex
       m={"auto"}
@@ -25,25 +22,53 @@ const Navbar: React.FC = ()=> {
         "2xl": "1400px",
       }}
       borderColor="black"
+      justifyContent={"space-between"}
     >
-      <Link to="Home">
-        <Flex color="thistheme.text" w={"100%"}>
-          <Box fontSize={{ base: "15px", sm: "25px" }} className="entity">
-            &lt;
-          </Box>
-          <Box fontSize={{ base: "18px", sm: "34px" }} className="mercy">
-            Mercy /
-          </Box>
-          <Box fontSize={{ base: "15px", sm: "25px" }} className="entity">
-            &gt;
-          </Box>
-        </Flex>
-      </Link>
-      <Spacer />
-      <Flex alignItems={"center"} w={"80%"}>
-        <Spacer />
-        {Nav.map((item) => {
-          return <NSwitch key={item.id} name={item.name} id={item.id} />;
+      <Flex
+        display={"flex"}
+        justifyContent={{
+          base: "flex-start",
+          md: "center"
+        }}
+        alignItems={"center"}
+        color="thistheme.text"
+        w={"fit-content"}
+      >
+        <Box fontSize={{ base: "13px", sm: "25px" }} className="entity">
+          &lt;
+        </Box>
+        <Box
+          onClick={() => {
+            navigate("/");
+          }}
+          fontSize={{ base: "13px", sm: "34px" }}
+          className="mercy"
+        >
+          Deepu
+        </Box>
+
+        <Box fontSize={{ base: "13px", sm: "25px" }} className="entity">
+          &gt;
+        </Box>
+      </Flex>
+
+      
+      <Flex alignItems={"center"} justifyContent={"flex-end"} w={"70%"}>
+
+        {pathNavigation.map((item) => {
+          console.log("item.path", item.path);
+          return (
+            item.active && (
+              <NSwitch
+                isActive={location.pathname == item.path}
+                active={item.active}
+                path={item.path}
+                key={item.id}
+                name={item.name}
+                id={item.id}
+              />
+            )
+          );
         })}
       </Flex>
     </Flex>

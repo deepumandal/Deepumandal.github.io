@@ -1,4 +1,4 @@
-import { Flex, Grid, GridItem, Heading, Image, VStack } from '@chakra-ui/react'
+import { Flex, Grid, GridItem, Heading, Image, Tooltip, VStack } from '@chakra-ui/react'
 import React from 'react'
 // import { Fade } from 'react-reveal'
 import Appicon from '../languageicon/Appicon'
@@ -21,10 +21,11 @@ interface WhatProps {
   fileName: string,
   skills: string[],
   softwareSkills: softwareType[]
+  even?: boolean
 }
 
 
-const What: React.FC<WhatProps> = ({ img, title, fileName, skills, softwareSkills }) => {
+const What: React.FC<WhatProps> = ({ even, img, title, fileName, skills, softwareSkills }) => {
 
   return (
     <Grid
@@ -36,22 +37,33 @@ const What: React.FC<WhatProps> = ({ img, title, fileName, skills, softwareSkill
         xl: "1100px",
         "2xl": "1400px",
       }}
+
       gridTemplateColumns={{ base: 'repeat(1,1fr)', sm: 'repeat(2,1fr)' }}
       gridTemplateRows={{ base: 'repeat(2,1fr)', sm: 'repeat(2,1fr)' }}
       gridTemplateAreas={{
-        base: `  "info" "image"`,
-        sm: ` "image info" "image info"   `
+        base: `"info" "image"`,
+        sm: even ? ` "info image" "info image"   ` : ` "image info" "image info"   `
       }}
+    // justifyContent={"space-between"}
+    // alignItems={"center"}
     >
-      <GridItem area={"image"} >
+      <GridItem area={"image"}
+        width={{base : "100%" , sm :"85%"}}
+        height={"fit-content"}
+        alignItems={"center"}
+        display={"flex"} justifyContent={"center"}
+      >
         {/* <Fade left duration={1500}> */}
-        <Image src={`./images/${img}`} />
+        <Tooltip label={title}>
+          <Image src={`./images/${img}`} width={{ base: "85%", sm: "75%" }} />
+        </Tooltip>
         {/* </Fade> */}
       </GridItem>
-      <GridItem area={"info"} >
+      <GridItem area={"info"}
+      >
         {/* <Fade right duration={1000}> */}
         <Heading
-          w={{ base: "80%", sm: "90%" }}
+          w={{ base: "92%", sm: "92%" }}
           m={"auto"}
           fontSize={{ base: "30px", sm: "40px" }}
           sx={{
@@ -64,7 +76,7 @@ const What: React.FC<WhatProps> = ({ img, title, fileName, skills, softwareSkill
         </Heading>
         {/* </Fade> */}
         {/* <Fade right duration={1500}> */}
-        <Flex flexWrap={'wrap'} mt={"20px"} align={"center"} justifyContent={"center"} >
+        <Flex flexWrap={'wrap'} mt={{base : "0px", sm :"20px"}} align={"center"} justifyContent={"center"} >
           {
             softwareSkills.map((item, i) => {
               return <Appicon key={i} {...item} />
@@ -82,7 +94,7 @@ const What: React.FC<WhatProps> = ({ img, title, fileName, skills, softwareSkill
         </VStack>
         {/* </Fade> */}
       </GridItem>
-    </Grid>
+    </Grid >
   )
 }
 

@@ -7,12 +7,12 @@ import {
   Text,
   Heading,
   Image,
-  Spacer,
 } from "@chakra-ui/react";
-import { certifications, degrees } from "../../portfolio";
+import { certifications, competitiveSites, degrees } from "../../portfolio";
 // import Degree from "../../components/Degree/Degree";
 import Certificate from "../../components/certificates/Certificate";
 import Degree from "../../components/Degree/Degree";
+import CompetitiveSites from "../../components/CompetitiveSites/CompetitiveSites";
 
 const Education: React.FC = () => {
   return (
@@ -24,10 +24,9 @@ const Education: React.FC = () => {
           md: "800px",
           lg: "1000px",
           xl: "1100px",
-          "2xl": "1400px",
+          "2xl": "1350px",
         }}
         m={"auto"}
-        mt={"100px"}
         gridTemplateAreas={{
           base: `  "education" "text" `,
           sm: ` "education text" "education text" `,
@@ -35,10 +34,10 @@ const Education: React.FC = () => {
         gridTemplateColumns={{ base: "repeat(1,1fr)", sm: "repeat(2, 1fr)" }}
         gridTemplateRows={{ base: "repeat(1,1fr)", sm: "repeat(2, 1fr)" }}
       >
-        <GridItem area={"education"}>
+        <GridItem area={"education"} display={"flex"}>
           <Image
             w={{ base: "80%", sm: "100%" }}
-            m={"auto"}
+            m={"40px"}
             src={"./images/eduation.png"}
           />
         </GridItem>
@@ -48,7 +47,7 @@ const Education: React.FC = () => {
           display={"flex"}
           justifyContent={"center"}
           pt={{ sm: "100px" }}
-          alignItems={"center"}
+          alignItems={"flex-start"}
         >
           <Box>
             <Text
@@ -72,6 +71,8 @@ const Education: React.FC = () => {
             >
               Basic Qualification and Certifcations
             </Text>
+            <CompetitiveSites logos={competitiveSites.competitiveSites} />
+
           </Box>
         </GridItem>
       </Grid>
@@ -79,10 +80,13 @@ const Education: React.FC = () => {
       <Degree {...degrees?.degree[0]} />
 
       {/* <Spacer /> */}
+      {
+        certifications.isShow &&
+        <Heading color={"thistheme.text"} mt={{ base: "100px", sm: "100px" }}>
+          Certifications
+        </Heading>
+      }
 
-      <Heading color={"thistheme.text"} mt={{ base: "100px", sm: "100px" }}>
-        Certifications
-      </Heading>
       <Flex
         flexWrap={"wrap"}
         gap={"20px"}
@@ -93,14 +97,14 @@ const Education: React.FC = () => {
           md: "800px",
           lg: "1000px",
           xl: "1100px",
-          "2xl": "1400px",
+          "2xl": "1300px",
         }}
         // border={"1px"}
         m={"auto"}
         height={"fit-content"}
 
       >
-        {certifications.certifications.map((item, i) => {
+        {certifications.isShow && certifications.certifications.map((item, i) => {
 
           return <Certificate key={i} {...item} />;
         })}

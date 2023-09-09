@@ -2,7 +2,6 @@ import {
   Flex,
   Heading,
   Image,
-  Spacer,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -33,14 +32,17 @@ const Project: React.FC<ProjectProps> = ({
 }) => {
   return (
     <VStack
-      bg={"#a6e1fa "}
-      w={"450px"}
+      bg={"#a6e1fa"}
+      w={{
+        base: "90%", sm: "400px"
+      }}
       align={"left"}
       p={"10px"}
       pl={{ base: "20px", sm: "auto" }}
       pr={{ base: "20px", sm: "auto" }}
       textAlign={"left"}
       boxShadow={"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}
+      height={"300px"}
     >
       <Heading
         onClick={() => (window.open(url, '_blank'))}
@@ -61,7 +63,6 @@ const Project: React.FC<ProjectProps> = ({
       >
         {name}
       </Heading>
-      <br />
       {description.map((item) => {
         return (
           <Text
@@ -78,9 +79,7 @@ const Project: React.FC<ProjectProps> = ({
           </Text>
         );
       })}
-      <br />
       <Flex
-
         flexDir={{ base: "column", sm: "row" }}
       >
         <Text
@@ -94,15 +93,12 @@ const Project: React.FC<ProjectProps> = ({
           {" "}
           Created on {createdAt}
         </Text>
-        <Spacer />
         <Flex gap={"15px"} flexWrap={"wrap"} w={{ base: "90%", sm: "50%" }}>
           {
             languages.map((item, i) => {
-              return <Image src={`./images/${item.iconifyClass}`} w={"55px"} />
+              return <Image src={`./images/${item.iconifyClass}`} w={"25px"} />
             })
           }
-
-
         </Flex>
       </Flex>
     </VStack>

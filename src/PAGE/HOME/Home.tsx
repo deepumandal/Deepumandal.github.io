@@ -5,6 +5,8 @@ import {
   GridItem,
   Heading,
   Img,
+  Stack,
+  Tooltip,
   VStack,
 } from "@chakra-ui/react";
 import React from "react";
@@ -48,12 +50,14 @@ const Home: React.FC = () => {
         <GridItem area={"Image"} h={{ sm: "600px", base: "500px" }}>
           {/* <Fade distance="20px" duration={1000} bottom> */}
           <br />
-          <Img
-            w={{ base: "80%", sm: "100%" }}
-            m={"auto"}
-            mt={"40px"}
-            src={`./images/greetings.png`}
-          />
+          <Tooltip label={"Feeling Proud"}>
+            <Img
+              w={{ base: "80%", sm: "100%" }}
+              m={"auto"}
+              mt={"40px"}
+              src={`./images/greetings.png`}
+            />
+          </Tooltip>
           {/* </Fade> */}
         </GridItem>
         <GridItem
@@ -96,9 +100,12 @@ const Home: React.FC = () => {
           What I do?
         </Heading>
         {/* </Fade> */}
-        <What {...skills.data[0]} />
-        <br />
-        <What {...skills.data[1]} />
+        <Stack gap={"2rem"}>
+
+          <What {...skills.data[0]} />
+          <What {...skills.data[1]} even={true} />
+          <What {...skills.data[2]} />
+        </Stack>
       </VStack>
     </Box>
   );

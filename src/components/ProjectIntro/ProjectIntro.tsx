@@ -15,7 +15,7 @@ const ProjectIntro: React.FC<ProjectIntroProps> = ({ title, description, avatar_
       w={{
         base: "100%",
         sm: "90%",
-        md: "800px",
+        md: "750px",
         lg: "1000px",
         xl: "1100px",
         "2xl": "1400px",

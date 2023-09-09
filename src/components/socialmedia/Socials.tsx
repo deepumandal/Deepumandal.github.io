@@ -1,7 +1,6 @@
 import React from "react";
-import { Button, Grid, SimpleGrid, Spacer } from "@chakra-ui/react";
+import { SimpleGrid } from "@chakra-ui/react";
 import { socialMediaLinks } from "../../portfolio";
-import { seo } from "../../portfolio";
 import Social from "./social/Social";
 import "./this.css";
 const Socials: React.FC = () => {
@@ -27,6 +26,7 @@ const Socials: React.FC = () => {
         justifyContent={"center"}
       >
         {socialMediaLinks.map((item, i) => {
+          if(!item.active) return null;
           return (
             <a key={i} href={item.link} rel="noreferrer" target={"_blank"}>
               {" "}

@@ -21,6 +21,9 @@ const ContactIntro: React.FC<ContactIntroProps> = ({ title, profile_image_path, 
   return (
     <div>
       <Grid
+        marginTop={{
+          base: "50px", sm: "100px"
+        }}
         m={"auto"}
         w={{
           base: "100%",
@@ -41,9 +44,6 @@ const ContactIntro: React.FC<ContactIntroProps> = ({ title, profile_image_path, 
         gridTemplateRows={{
           sm: "repeat(1, 1fr)",
           base: "repeat(2,1fr)",
-        }}
-        gap={{
-          base: "50px",
         }}
       >
         <GridItem
@@ -121,7 +121,7 @@ const ContactIntro: React.FC<ContactIntroProps> = ({ title, profile_image_path, 
             }}
             size={"md"}
           >
-            <a target={"_blank"} href="https://drive.google.com/file/d/1qXnUfDG8s7TwCpwOMTFgH2Wi7fJzyB7l/view">
+            <a target={"_blank"} href="https://drive.google.com/file/d/1_HFTzjj2h598cv_zMjvFAvMGW-0gIifa/view?usp=sharing">
               See my resume
             </a>
           </Button>

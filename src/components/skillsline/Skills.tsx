@@ -5,8 +5,8 @@ const Skills: React.FC<{
   Skills: string
 }> = ({ Skills }) => {
   return (
-    <Text textAlign={"left"} w={{ base: "70%", sm: "100%" }}
-      fontSize={{ base: "15px", sm: "20px" }}
+    <Text textAlign={"left"} w={{ base: "90%", sm: "100%" }}
+      fontSize={{ base: "13px", sm: "20px" }}
       sx={{
         fontFamily: 'Open Sans',
         color: "thistheme.describe",

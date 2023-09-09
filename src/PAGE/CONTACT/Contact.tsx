@@ -14,24 +14,9 @@ const Contact = () => {
   // console.log(about)
   return (
     <div id='Contact Me'>
-      <br />
-      <br />
-      <br />
-
       <ContactIntro {...contactPageData.contactSection} />
-      <Spacer />
-      <br />
-      <br />
-      <br />
       <Blog {...contactPageData.blogSection} />
-
-      <br />
-      <br />
-      <br />
-
       <About  {...about} />
-
-
     </div>
   )
 }

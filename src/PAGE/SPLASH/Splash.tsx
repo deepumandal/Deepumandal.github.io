@@ -7,8 +7,9 @@ const Splash = () => {
             justifyContent: "center",
             alignItems: "center",
             fontSize: "5rem",
-            color : "teal"
-        }}>Splash</div>
+            color: "teal"
+        }}>
+        </div>
     )
 }
 

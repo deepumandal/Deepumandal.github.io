@@ -115,7 +115,7 @@ const Blog: React.FC<blogProps> = ({ title, subtitle, link, avatar_image_path })
             size={"md"}
           >
             <a target={"_blank"} href={link} >
-              See my resume
+              My blog Page
             </a>
           </Button>
         </GridItem>

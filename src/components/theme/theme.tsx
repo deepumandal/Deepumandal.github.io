@@ -25,4 +25,17 @@ export const appTheme = {
   headerColor: "#0E6BA877",
   splashBg: "#001C55",
 };
+export interface ThemeInterface {
+  body: string;
+  text: string;
+  expTxtColor: string;
+  highlight: string;
+  dark: string;
+  secondaryText: string;
+  imageHighlight: string;
+  compImgHighlight: string;
+  jacketColor: string;
+  headerColor: string;
+  splashBg: string;
+}
 export default theme;

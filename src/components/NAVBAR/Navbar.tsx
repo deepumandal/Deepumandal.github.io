@@ -33,6 +33,7 @@ const Navbar: React.FC = () => {
         alignItems={"center"}
         color="thistheme.text"
         w={"fit-content"}
+        cursor={"pointer"}
       >
         <Box fontSize={{ base: "13px", sm: "25px" }}
         // className="entity"
@@ -43,11 +44,11 @@ const Navbar: React.FC = () => {
           onClick={() => {
             navigate("/");
           }}
-          fontSize={{ base: "13px", sm: "34px" }}
+          fontSize={{ base: "13px", sm: "54px" }}
           className="mercy"
         >
           {/* Codding / */}
-          {" "} DevDynamo
+          {" "}  Code First
           {" "}
           {/* <Image src={"./images/codingIsLife.png"} /> */}
         </Box>

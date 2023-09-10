@@ -13,6 +13,7 @@ import Footer from './components/Footer/Footer';
 import TopButton from './components/TopButton/TopButton';
 // import { Fade } from 'react-reveal';
 import { HashRouter, Route, Routes } from "react-router-dom";
+import Experience from './PAGE/EXPERIENCE/Experience';
 
 
 
@@ -46,11 +47,15 @@ function App(): JSX.Element {
 
         <Navbar />
         <Routes>
-          <Route path='/' element={<Splash />} />
+          <Route path='/' element={
+          // <Splash />
+          <Home />
+          } />
           <Route path='/home' element={<Home />} />
           <Route path='/education' element={<Education />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/Contact' element={<Contact />} />
+          <Route path='/experience' element={<Experience />} />
         </Routes>
         <Footer theme={appTheme} />
         <TopButton theme={appTheme} />

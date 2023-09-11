@@ -944,7 +944,7 @@ const experience = {
       experiences: [
         {
           title: "SDE 1 ",
-          company: "HoneySys IT Services Pvt Ltd",
+          company: "Honeysys It Service Pvt Ltd",
           company_url: "https://honeysys.com/",
           logo_path: "honebi.jpeg",
           duration: "June 2023 - PRESENT",

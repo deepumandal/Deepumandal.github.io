@@ -107,7 +107,7 @@ const ExperienceCard: React.FC<ExperienceCardInterface> = ({
                     </VStack>
                     <VStack
                         width={{ base: "100%", sm: "50%" }}
-                        alignItems={{ base: "center", sm: "flex-start" }}
+                        alignItems={{ base: "center", sm: "flex-end" }}
                     >
                         <Text
                             sx={{

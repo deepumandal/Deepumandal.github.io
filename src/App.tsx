@@ -11,9 +11,22 @@ import Splash from './PAGE/SPLASH/Splash';
 import { appTheme } from './components/theme/theme';
 import Footer from './components/Footer/Footer';
 import TopButton from './components/TopButton/TopButton';
-// import { Fade } from 'react-reveal';
 import { HashRouter, Route, Routes } from "react-router-dom";
 import Experience from './PAGE/EXPERIENCE/Experience';
+import Reveal from 'react-awesome-reveal';
+import { keyframes } from "@emotion/react";
+
+export const DownWardWith2000 = keyframes`
+
+from {
+opacity : 0;
+transform : translateY(-50px)
+}
+to {
+opacity : 1;
+transform : translateY(0px)
+}
+`
 
 
 
@@ -24,32 +37,15 @@ function App(): JSX.Element {
 
   return (
     <Box className="App" border={"1px"} borderColor={"#edf9fe"} bg={"thistheme.background"} >
-      {/* <Fade top> */}
-      {/* <Navbar /> */}
-      {/* </Fade> */}
-      {/* <Home />
-      <Education />
-      <Projects />
-      <Contact /> */}
-      {/* <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path='/' element={<Splash />} />
-          <Route path='/home' element={<Home />} />
-          <Route path='/education' element={<Education />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/Contact' element={<Contact />} />
-        </Routes>
-        <Footer theme={appTheme} />
-        <TopButton theme={appTheme} />
-      </BrowserRouter> */}
       <HashRouter basename="/">
+        <Reveal duration={2000} keyframes={DownWardWith2000}>
+          <Navbar />
+        </Reveal>
 
-        <Navbar />
         <Routes>
           <Route path='/' element={
-          // <Splash />
-          <Home />
+            // <Splash />
+            <Home />
           } />
           <Route path='/home' element={<Home />} />
           <Route path='/education' element={<Education />} />
@@ -64,7 +60,7 @@ function App(): JSX.Element {
 
 
       </HashRouter>
-    </Box>
+    </Box >
   );
 }
 

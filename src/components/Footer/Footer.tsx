@@ -1,7 +1,8 @@
 import React from "react";
 import { Box, Text } from "@chakra-ui/react";
-
+import { keyframes } from "@emotion/react";
 import { greeting } from "../../portfolio";
+import Reveal from "react-awesome-reveal";
 
 interface FooterProps {
   theme: {
@@ -9,11 +10,19 @@ interface FooterProps {
   };
 }
 
-const Footer: React.FC<FooterProps> = ({theme}) => {
-
+const Footer: React.FC<FooterProps> = ({ theme }) => {
   return (
     <Box m={"1rem"}>
-      {/* <Fade> */}
+      <Reveal
+        keyframes={keyframes`
+      from {
+          opacity: 0
+      }
+      to {
+          opacity: 1
+      }
+      `}
+      >
         <Text
           textAlign="center"
           fontWeight="bold"
@@ -22,7 +31,7 @@ const Footer: React.FC<FooterProps> = ({theme}) => {
         >
           Made with ❤️ by {greeting.title}
         </Text>
-      {/* </Fade> */}
+      </Reveal>
     </Box>
   );
 };

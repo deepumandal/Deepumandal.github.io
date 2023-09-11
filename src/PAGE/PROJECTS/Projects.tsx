@@ -3,10 +3,27 @@ import { Button, Flex } from "@chakra-ui/react";
 import { project, projectsHeader, seo } from "../../portfolio";
 import ProjectIntro from "../../components/ProjectIntro/ProjectIntro";
 import Project from "../../components/Project/Project";
+import { keyframes } from "@emotion/react";
+import Reveal from "react-awesome-reveal";
+
+const Upwards = keyframes`
+from {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+to {
+  opacity: 1;
+  transform: translateY(0px);
+}
+`
+
 const Projects = () => {
   return (
     <div id="Projects">
-      <ProjectIntro {...projectsHeader} />
+      <Reveal duration={2000} keyframes={Upwards}>
+        <ProjectIntro {...projectsHeader} />
+      </Reveal>
 
       <Flex w={{
         base: "100%",

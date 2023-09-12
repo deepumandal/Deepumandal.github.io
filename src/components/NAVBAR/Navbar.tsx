@@ -9,6 +9,7 @@ import { pathNavigation } from "../../portfolio";
 const Navbar: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  // if(location.pathname === "/") return <></> for future porpose 
   return (
     <Flex
       m={"auto"}

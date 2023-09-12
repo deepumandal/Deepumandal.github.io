@@ -36,7 +36,7 @@ function App(): JSX.Element {
 
 
   return (
-    <Box className="App" border={"1px"} borderColor={"#edf9fe"} bg={"thistheme.background"} >
+    <Box className="App" border={"1px"} overflowX={"hidden"} borderColor={"#edf9fe"} bg={"thistheme.background"} >
       <HashRouter basename="/">
         <Reveal duration={2000} keyframes={DownWardWith2000}>
           <Navbar />

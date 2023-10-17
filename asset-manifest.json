@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.e4b20a97.css",
-    "main.js": "/static/js/main.55e7a0b7.js",
+    "main.js": "/static/js/main.1a69327d.js",
     "static/media/Allise.ttf": "/static/media/Allise.add9f08f0e3a59490813.ttf",
     "static/media/adine-kirnberg.regular.ttf": "/static/media/adine-kirnberg.regular.3b12be67cb2b98a1477b.ttf",
     "index.html": "/index.html",
     "main.e4b20a97.css.map": "/static/css/main.e4b20a97.css.map",
-    "main.55e7a0b7.js.map": "/static/js/main.55e7a0b7.js.map"
+    "main.1a69327d.js.map": "/static/js/main.1a69327d.js.map"
   },
   "entrypoints": [
     "static/css/main.e4b20a97.css",
-    "static/js/main.55e7a0b7.js"
+    "static/js/main.1a69327d.js"
   ]
 }

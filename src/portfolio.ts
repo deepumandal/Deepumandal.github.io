@@ -75,20 +75,20 @@ const socialMediaLinks = [
     backgroundColor: "#1DA1F2", // Reference https://simpleicons.org/?q=twitter
     active: true
   },
-  {
-    name: "Facebook",
-    link: "https://www.facebook.com/profile.php?id=100023750443100",
-    fontAwesomeIcon: "facebook.png", // Reference https://fontawesome.com/icons/facebook-f?style=brands
-    backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
-    active: true
-  },
-  {
-    name: "Instagram",
-    link: "https://www.instagram.com/no_mercy_hunter/",
-    fontAwesomeIcon: "instagram.png", // Reference https://fontawesome.com/icons/instagram?style=brands
-    backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
-    active: true
-  },
+  // {
+  //   name: "Facebook",
+  //   link: "https://www.facebook.com/profile.php?id=100023750443100",
+  //   fontAwesomeIcon: "facebook.png", // Reference https://fontawesome.com/icons/facebook-f?style=brands
+  //   backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
+  //   active: true
+  // },
+  // {
+  //   name: "Instagram",
+  //   link: "https://www.instagram.com/no_mercy_hunter/",
+  //   fontAwesomeIcon: "instagram.png", // Reference https://fontawesome.com/icons/instagram?style=brands
+  //   backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
+  //   active: true
+  // },
   {
     name: "Medium",
     link: "https://medium.com/@deepak.studentid2030",

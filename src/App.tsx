@@ -6,8 +6,9 @@ import Home from './PAGE/HOME/Home';
 import Education from './PAGE/EDUCATION/Education';
 import Projects from './PAGE/PROJECTS/Projects';
 import Contact from './PAGE/CONTACT/Contact';
+
 // import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Splash from './PAGE/SPLASH/Splash';
+// import Splash from './PAGE/SPLASH/Splash';
 import { appTheme } from './components/theme/theme';
 import Footer from './components/Footer/Footer';
 import TopButton from './components/TopButton/TopButton';
@@ -15,7 +16,11 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import Experience from './PAGE/EXPERIENCE/Experience';
 import Reveal from 'react-awesome-reveal';
 import { keyframes } from "@emotion/react";
-
+// const Home = React.lazy(() => import("./PAGE/HOME/Home"));
+// const Education = React.lazy(() => import("./PAGE/EDUCATION/Education"))
+// const Projects = React.lazy(() => import("./PAGE/PROJECTS/Projects"))
+// const Contact = React.lazy(() => import("./PAGE/CONTACT/Contact"))
+// console.log("Home",Home)
 export const DownWardWith2000 = keyframes`
 
 from {

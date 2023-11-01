@@ -71,6 +71,7 @@ const Home: React.FC = () => {
                 m={"auto"}
                 mt={"40px"}
                 src={`./images/greetings.png`}
+                alt={`./images/greetings.png`}
               />
             </Tooltip>
             {/* </Fade> */}

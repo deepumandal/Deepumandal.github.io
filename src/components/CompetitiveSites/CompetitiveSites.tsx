@@ -27,6 +27,7 @@ const CompetitiveSites: React.FC<Props> = ({ logos }) => {
                 <Img
                width={"60px"}
                margin={"5px"}
+               alt={`./imgurl/${logo.iconifyClassname}`}
                sx={{ cursor: "pointer" }}     
               src={`./imgurl/${logo.iconifyClassname}`}
             />

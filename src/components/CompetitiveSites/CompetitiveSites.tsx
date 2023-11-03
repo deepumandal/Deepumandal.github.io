@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Box,
   Link,
   Tooltip,
   Img,

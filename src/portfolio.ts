@@ -1300,7 +1300,7 @@ const project = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "profile_image_path.png",
+    profile_image_path: "profile_image_path.jpg",
     description:
       "I'm dedicated to helping people become better through knowledge. I create lessons that are carefully designed to touch each person personally, so they can change and improve who they are. My main aim is to inspire long-lasting and meaningful changes in everyone who reads what I write.",
   },

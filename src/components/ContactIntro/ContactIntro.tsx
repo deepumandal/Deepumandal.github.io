@@ -59,8 +59,8 @@ const ContactIntro: React.FC<ContactIntroProps> = ({ title, profile_image_path, 
           <Image
             borderRadius={"10px"}
             w={{
-              sm: "250px",
-              base: "200px",
+              sm: "350px",
+              base: "280px",
             }}
             src={`./images/${profile_image_path}`}
           />{" "}

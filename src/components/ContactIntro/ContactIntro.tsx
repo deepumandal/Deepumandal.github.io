@@ -121,7 +121,7 @@ const ContactIntro: React.FC<ContactIntroProps> = ({ title, profile_image_path, 
             }}
             size={"md"}
           >
-            <a target={"_blank"} href="https://drive.google.com/file/d/1_HFTzjj2h598cv_zMjvFAvMGW-0gIifa/view?usp=sharing">
+            <a target={"_blank"} href="https://drive.google.com/file/d/12U_11Ab_u5BoFZ6WdKAWYIOtUZoG5Pa-/view?usp=sharing?usp=sharing">
               See my resume
             </a>
           </Button>

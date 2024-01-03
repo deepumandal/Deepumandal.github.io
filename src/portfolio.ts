@@ -45,35 +45,35 @@ const socialMediaLinks = [
     link: "https://github.com/Deepumandal",
     fontAwesomeIcon: "github.png", // Reference https://fontawesome.com/icons/github?style=brands
     backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
-    active: true
+    active: true,
   },
   {
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/deepak-mandal-32b885211/",
     fontAwesomeIcon: "linkdin.png", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
     backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
-    active: true
+    active: true,
   },
   {
     name: "YouTube",
     link: "https://www.youtube.com/channel/UCDqHKKzAyGO4m9JFlo8jdQg",
     fontAwesomeIcon: "youtube.png", // Reference https://fontawesome.com/icons/youtube?style=brands
     backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
-    active: false
+    active: false,
   },
   {
     name: "Gmail",
     link: "mailto:deepak.studentid2030@gmail.com",
     fontAwesomeIcon: "gmail.png", // Reference https://fontawesome.com/icons/google?style=brands
     backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
-    active: true
+    active: true,
   },
   {
     name: "Twitter",
     link: "https://twitter.com/no_mercy_hunter",
     fontAwesomeIcon: "twitter.png", // Reference https://fontawesome.com/icons/twitter?style=brands
     backgroundColor: "#1DA1F2", // Reference https://simpleicons.org/?q=twitter
-    active: true
+    active: true,
   },
   // {
   //   name: "Facebook",
@@ -94,14 +94,14 @@ const socialMediaLinks = [
     link: "https://medium.com/@deepak.studentid2030",
     fontAwesomeIcon: "medium.png", // Reference https://fontawesome.com/icons/instagram?style=brands
     backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
-    active: false
+    active: false,
   },
 ];
 
 const skills = {
   data: [
     {
-      img: 'BackendImg.png',
+      img: "BackendImg.png",
       title: "Backend Development",
       fileName: "BackendImg",
       skills: [
@@ -110,14 +110,13 @@ const skills = {
         "⚡Implemented authentication and authorization mechanisms for security.",
         "⚡Managed database operations, including schema design and queries.",
         "⚡Ensured scalability and performance optimization for the backend services.",
-        "⚡Utilized microservices technology for modular and scalable frontend architecture."
+        "⚡Utilized microservices technology for modular and scalable frontend architecture.",
       ],
       softwareSkills: [
         {
           skillName: "Typescript",
           fontAwesomeClassname: "typescript.png",
-          imgurl:
-            "typescript.png",
+          imgurl: "typescript.png",
           style: {
             color: "#61DAFB",
           },
@@ -126,8 +125,7 @@ const skills = {
         {
           skillName: "NodeJS",
           fontAwesomeClassname: "node.png",
-          imgurl:
-            "node.png",
+          imgurl: "node.png",
           style: {
             color: "#339933",
           },
@@ -135,8 +133,7 @@ const skills = {
         {
           skillName: "expressJs",
           fontAwesomeClassname: "express.png",
-          imgurl:
-            "express.png",
+          imgurl: "express.png",
           style: {
             color: "#339933",
           },
@@ -145,8 +142,7 @@ const skills = {
         {
           skillName: "mongoDb",
           fontAwesomeClassname: "mongodb.png",
-          imgurl:
-            "mongodb.png",
+          imgurl: "mongodb.png",
           style: {
             color: "#CB3837",
           },
@@ -154,8 +150,7 @@ const skills = {
         {
           skillName: "Redis",
           fontAwesomeClassname: "redis.png",
-          imgurl:
-            "redis.png",
+          imgurl: "redis.png",
           style: {
             color: "#CB3837",
           },
@@ -163,7 +158,7 @@ const skills = {
       ],
     },
     {
-      img: 'heatmap.png',
+      img: "heatmap.png",
       title: "Frontend Development",
       fileName: "FullStackImg",
       skills: [
@@ -307,9 +302,8 @@ const skills = {
       ],
     },
 
-
     {
-      img: 'projectManagement.png',
+      img: "projectManagement.png",
       title: "Project Management & OS",
       fileName: "FullStackImg",
       skills: [
@@ -374,9 +368,8 @@ const skills = {
             color: "#E34F26",
           },
         },
-      ]
+      ],
     },
-
 
     // {
     //   title: "Data Science & AI",
@@ -420,7 +413,7 @@ const skills = {
     //   ],
     // },   <FontAwesomeIcon icon="f" />
     {
-      img: 'heatmap.png',
+      img: "heatmap.png",
       title: "Full Stack Development",
       fileName: "FullStackImg",
       skills: [
@@ -789,8 +782,10 @@ const degrees = {
       logo_path: "Amity_University_logo.png",
       alt_name: "Amity University",
       duration: "2023 - Present",
-      descriptions: ["⚡ I am currently Pursuing BCA from the Amity University Online"],
-      website_link: "https://amityonline.com/"
+      descriptions: [
+        "⚡ I am currently Pursuing BCA from the Amity University Online",
+      ],
+      website_link: "https://amityonline.com/",
     },
     {
       title: "Masai School",
@@ -801,7 +796,7 @@ const degrees = {
       descriptions: [
         "⚡ Successfully solved over 500 Data Structure and Algorithms (DSA) problems over Masai lms.",
         "⚡Accumulated 2000+ hours of coding learning.",
-        "⚡Completed more than 50 hands-on projects, including 6+ cloned projects, to reinforce technical skills."
+        "⚡Completed more than 50 hands-on projects, including 6+ cloned projects, to reinforce technical skills.",
       ],
       website_link: "https://masaischool.com/",
     },
@@ -947,7 +942,7 @@ const experience = {
           company: "Honeysys It Service Pvt Ltd",
           company_url: "https://honeysys.com/",
           logo_path: "honebi.jpeg",
-          duration: "June 2023 - PRESENT",
+          duration: "Jan 2023 - Present",
           location: "bangalore, karnataka",
           description:
             "I am working on a project called PageBuilder, which is powered by Honebi. In this project, i had primarily focused on using state management tools like Redux. The main purpose of PageBuilder is to create various types of websites based on customer requests.",
@@ -1084,217 +1079,211 @@ const publicationsHeader = {
   avatar_image_path: "projects_image.svg",
 };
 
-// projects 
+// projects
 
 const project = {
-  "data": [
+  data: [
     {
-      "id": "M1DEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      "name": "React Webpack Starter",
-      "createdAt": "2023-03",
-      "url": "https://github.com/deepumandal/react-webpack-configuration",
-      "description": [
+      id: "M1DEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
+      name: "React Webpack Starter",
+      createdAt: "2023-03",
+      url: "https://github.com/deepumandal/react-webpack-configuration",
+      description: [
         "⚡It Serves educational resource for setting up your custum React application ",
         "⚡It provides step-by-step guidance on configuring your React project and installing the necessary dependencies.",
-        "⚡React Webpack Starter utilizes technologies such as React, Babel, Webpack 5, and more. For a comprehensive view, we recommend checking out our GitHub repository "
+        "⚡React Webpack Starter utilizes technologies such as React, Babel, Webpack 5, and more. For a comprehensive view, we recommend checking out our GitHub repository ",
       ],
-      "isFork": false,
-      "link": "https://deepumandal.github.io/react-webpack-configuration/",
-      "languages": [
+      isFork: false,
+      link: "https://deepumandal.github.io/react-webpack-configuration/",
+      languages: [
         {
-          "name": "HTML",
-          "iconifyClass": "html.png"
+          name: "HTML",
+          iconifyClass: "html.png",
         },
         {
-          "name": "Webpack 5",
-          "iconifyClass": "webpack.png"
-        },
-
-        {
-          "name": "file loader",
-          "iconifyClass": "fileloader.png"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "javascript.png"
-        },
-        {
-          "name": "Git",
-          "iconifyClass": "github.png"
-        }
-        ,
-        {
-          "name": "React",
-          "iconifyClass": "react.png"
+          name: "Webpack 5",
+          iconifyClass: "webpack.png",
         },
 
         {
-          "name": "babel",
-          "iconifyClass": "babel.png"
+          name: "file loader",
+          iconifyClass: "fileloader.png",
+        },
+        {
+          name: "JavaScript",
+          iconifyClass: "javascript.png",
+        },
+        {
+          name: "Git",
+          iconifyClass: "github.png",
+        },
+        {
+          name: "React",
+          iconifyClass: "react.png",
         },
 
-      ]
+        {
+          name: "babel",
+          iconifyClass: "babel.png",
+        },
+      ],
     },
     {
-      "id": "M1DEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      "name": "Suger Cosmetic",
-      "createdAt": "2023-03",
-      "url": "https://github.com/deepumandal/sugarcosmetic",
-      "description": [
+      id: "M1DEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
+      name: "Suger Cosmetic",
+      createdAt: "2023-03",
+      url: "https://github.com/deepumandal/sugarcosmetic",
+      description: [
         "⚡It Serves educational resource for setting up your custum React application ",
         "⚡It provides step-by-step guidance on configuring your React project and installing the necessary dependencies.",
-        "⚡React Webpack Starter utilizes technologies such as React, Babel, Webpack 5, and more. For a comprehensive view, we recommend checking out our GitHub repository "
+        "⚡React Webpack Starter utilizes technologies such as React, Babel, Webpack 5, and more. For a comprehensive view, we recommend checking out our GitHub repository ",
       ],
-      "isFork": false,
-      "link": "https://sugarcosmetucs.vercel.app/",
-      "languages": [
+      isFork: false,
+      link: "https://sugarcosmetucs.vercel.app/",
+      languages: [
         {
-          "name": "HTML",
-          "iconifyClass": "html.png"
+          name: "HTML",
+          iconifyClass: "html.png",
         },
         {
-          "name": "Next Js",
-          "iconifyClass": "nextjs.png"
+          name: "Next Js",
+          iconifyClass: "nextjs.png",
         },
         {
-          "name": "Google api's",
-          "iconifyClass": "googleapi.png"
+          name: "Google api's",
+          iconifyClass: "googleapi.png",
         },
         {
-          "name": "fast two sms",
-          "iconifyClass": "fasttwosms.png"
+          name: "fast two sms",
+          iconifyClass: "fasttwosms.png",
         },
         {
-          "name": "JavaScript",
-          "iconifyClass": "javascript.png"
+          name: "JavaScript",
+          iconifyClass: "javascript.png",
         },
         {
-          "name": "Git",
-          "iconifyClass": "github.png"
-        }
-        ,
-        {
-          "name": "React",
-          "iconifyClass": "react.png"
+          name: "Git",
+          iconifyClass: "github.png",
         },
-
         {
-          "name": "node mailer",
-          "iconifyClass": "nodemailer.png"
+          name: "React",
+          iconifyClass: "react.png",
         },
 
-      ]
+        {
+          name: "node mailer",
+          iconifyClass: "nodemailer.png",
+        },
+      ],
     },
     {
-      "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      "name": "SHOP.COM",
-      "createdAt": "2022-04",
-      "url": "https://github.com/deepumandal/shop.com",
-      "description": [
+      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
+      name: "SHOP.COM",
+      createdAt: "2022-04",
+      url: "https://github.com/deepumandal/shop.com",
+      description: [
         "⚡SHOP . COM Marketplace offers great deals on clothes, beauty, health and nutrition, shoes, electronics, and more from over 1500 stores with one easy checkout.  ",
         "⚡This is a collaboration project done by six members. The deadline for this project is one week  ",
-        "⚡  Tech used HTML5 and CSS3 & JAVASCRIPT "
+        "⚡  Tech used HTML5 and CSS3 & JAVASCRIPT ",
       ],
-      "isFork": false,
-      "link": "https://remarkable-klepon-b0037b.netlify.app/index.html",
-      "languages": [
+      isFork: false,
+      link: "https://remarkable-klepon-b0037b.netlify.app/index.html",
+      languages: [
         {
-          "name": "HTML",
-          "iconifyClass": "html.png"
+          name: "HTML",
+          iconifyClass: "html.png",
         },
         {
-          "name": "CSS",
-          "iconifyClass": "css.png"
+          name: "CSS",
+          iconifyClass: "css.png",
         },
         {
-          "name": "JavaScript",
-          "iconifyClass": "javascript.png"
+          name: "JavaScript",
+          iconifyClass: "javascript.png",
         },
         {
-          "name": "Git",
-          "iconifyClass": "github.png"
-        }
-      ]
+          name: "Git",
+          iconifyClass: "github.png",
+        },
+      ],
     },
     {
-      "id": "MDEwOlJlcG9zaXRvcnkyNjkwNzUwMjM=",
-      "name": "Fitmeals",
-      "createdAt": "2022-05",
-      "url": "https://github.com/ashutosh1919/truvisory",
-      "description": [
+      id: "MDEwOlJlcG9zaXRvcnkyNjkwNzUwMjM=",
+      name: "Fitmeals",
+      createdAt: "2022-05",
+      url: "https://github.com/ashutosh1919/truvisory",
+      description: [
         "⚡Fitmeals is not a diet system that promotes cleanses, pills, preserved foods or any kind of disordered eating habits.  ",
         "⚡This is a collaboration project done by six members. The deadline for this project is one week ",
-        "⚡ Tech used HTML 5, CSS 3 ,JAVASRIPT AND Jquery. "
+        "⚡ Tech used HTML 5, CSS 3 ,JAVASRIPT AND Jquery. ",
       ],
-      "isFork": false,
-      "link": "https://startling-croquembouche-7c4ba5.netlify.app/",
-      "languages": [
+      isFork: false,
+      link: "https://startling-croquembouche-7c4ba5.netlify.app/",
+      languages: [
         {
-          "name": "HTML 5",
-          "iconifyClass": "html.png"
+          name: "HTML 5",
+          iconifyClass: "html.png",
         },
         {
-          "name": "CSS 3",
-          "iconifyClass": "css.png"
+          name: "CSS 3",
+          iconifyClass: "css.png",
         },
         {
-          "name": " Advanced js ES6",
-          "iconifyClass": "javascript.png"
+          name: " Advanced js ES6",
+          iconifyClass: "javascript.png",
         },
         {
-          "name": "Git",
-          "iconifyClass": "github.png"
+          name: "Git",
+          iconifyClass: "github.png",
         },
         {
-          "name": "jQuery",
-          "iconifyClass": "jquery.png"
-        }
-      ]
+          name: "jQuery",
+          iconifyClass: "jquery.png",
+        },
+      ],
     },
     {
-      "id": "MDEwOlJlcG9zaXRvcnkyNzM1MTI1NTE=",
-      "name": "MODESENS",
-      "createdAt": "2022-06",
-      "url": "https://github.com/ashutosh1919/ml-data-bot",
-      "description": [
+      id: "MDEwOlJlcG9zaXRvcnkyNzM1MTI1NTE=",
+      name: "MODESENS",
+      createdAt: "2022-06",
+      url: "https://github.com/ashutosh1919/ml-data-bot",
+      description: [
         "⚡ModeSens is your digital shopping assistant dedicated to saving you time and money. With ModeSens , you can view a product's availability ",
         "⚡This is a collaboration project done by six members. The deadline for this project is one week ",
         "⚡Tech used REACTJS, REDUX ,REDUX-THUNK, REACT ROUTER DOM ,CLASSNAME",
-        "⚡ BOOTSTRAP , CHACKRA UI JSON-SERVER AS MOCK SERVER"
+        "⚡ BOOTSTRAP , CHACKRA UI JSON-SERVER AS MOCK SERVER",
       ],
-      "isFork": false,
-      "link": "https://magnificent-bublanina-64e24e.netlify.app/",
-      "languages": [
+      isFork: false,
+      link: "https://magnificent-bublanina-64e24e.netlify.app/",
+      languages: [
         {
-          "name": "Reactjs",
-          "iconifyClass": "react.png"
+          name: "Reactjs",
+          iconifyClass: "react.png",
         },
         {
-          "name": "Bootstrap 5",
-          "iconifyClass": "bootstrap.png"
+          name: "Bootstrap 5",
+          iconifyClass: "bootstrap.png",
         },
         {
-          "name": "Chackra ui",
-          "iconifyClass": "chakraui.png"
+          name: "Chackra ui",
+          iconifyClass: "chakraui.png",
         },
         {
-          "name": "Git",
-          "iconifyClass": "github.png"
+          name: "Git",
+          iconifyClass: "github.png",
         },
         {
-          "name": "Material ui",
-          "iconifyClass": "materialui.png"
+          name: "Material ui",
+          iconifyClass: "materialui.png",
         },
         {
-          "name": "Json-Server",
-          "iconifyClass": "jsonserver.png"
-        }
-      ]
-    }
-  ]
-}
-
-
+          name: "Json-Server",
+          iconifyClass: "jsonserver.png",
+        },
+      ],
+    },
+  ],
+};
 
 // Contact Page
 const contactPageData = {
@@ -1313,7 +1302,7 @@ const contactPageData = {
   },
   addressSection: {
     title: "Address",
-    subtitle: "I'm originally from Delhi, but I currently live in Balgore.",
+    subtitle: "I'm originally from Delhi, but I currently live in Bangalore.",
     avatar_image_path: "address.png",
     // location_map_link: "https://www.google.com/maps/@28.5006897,77.3152116,12z",
   },
@@ -1332,7 +1321,6 @@ export const pathNavigation = [
   { name: "Contact Me", id: "Contact Me", path: "/contact", active: true },
 ];
 
-
 export {
   settings,
   seo,
@@ -1346,5 +1334,5 @@ export {
   projectsHeader,
   publicationsHeader,
   contactPageData,
-  project
+  project,
 };

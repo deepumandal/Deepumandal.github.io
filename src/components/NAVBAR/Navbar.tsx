@@ -9,7 +9,7 @@ import { pathNavigation } from "../../portfolio";
 const Navbar: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  // if(location.pathname === "/") return <></> for future porpose 
+  // if(location.pathname === "/") return <></> for future porpose
   return (
     <Flex
       m={"auto"}
@@ -29,15 +29,16 @@ const Navbar: React.FC = () => {
         display={"flex"}
         justifyContent={{
           base: "flex-start",
-          md: "center"
+          md: "center",
         }}
         alignItems={"center"}
         color="thistheme.text"
         w={"fit-content"}
         cursor={"pointer"}
       >
-        <Box fontSize={{ base: "13px", sm: "25px" }}
-        // className="entity"
+        <Box
+          fontSize={{ base: "13px", sm: "25px" }}
+          // className="entity"
         >
           &lt;{" "}
         </Box>
@@ -48,22 +49,32 @@ const Navbar: React.FC = () => {
           fontSize={{ base: "13px", sm: "54px" }}
           className="mercy"
         >
-          {/* Codding / */}
-          {" "}  Code First
-          {" "}
+          {/* Codding / */} Code First{" "}
           {/* <Image src={"./images/codingIsLife.png"} /> */}
         </Box>
 
-        <Box fontSize={{ base: "13px", sm: "25px" }}
-        // className="entity"
+        <Box
+          fontSize={{ base: "13px", sm: "25px" }}
+          // className="entity"
         >
-          {" "}/&gt;
+          {" "}
+          /&gt;
         </Box>
       </Flex>
 
-
-      <Flex alignItems={"center"} justifyContent={"flex-end"} w={"70%"}>
-
+      <Flex
+        // id="hello"
+        // display={{
+        //   base: "none",
+        //   sm: "flex",
+        //   md: "flex",
+        //   lg: "flex",
+        //   xl: "flex",
+        // }}
+        alignItems={"center"}
+        justifyContent={"flex-end"}
+        w={"70%"}
+      >
         {pathNavigation.map((item) => {
           console.log("item.path", item.path);
           return (

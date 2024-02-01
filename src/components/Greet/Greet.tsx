@@ -1,21 +1,14 @@
 import { HStack, Spacer, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 interface GreetProps {
-  title: string,
-  nickname: string,
-  subTitle: string,
-  resumeLink: string,
-  portfolio_repository: string,
-  githubProfile: string,
+  title: string;
+  nickname: string;
+  subTitle: string;
+  resumeLink: string;
+  portfolio_repository: string;
+  githubProfile: string;
 }
-const Greet: React.FC<GreetProps> = ({
-  title,
-  nickname,
-  subTitle,
-  resumeLink,
-  portfolio_repository,
-  githubProfile,
-}) => {
+const Greet: React.FC<GreetProps> = ({ title, nickname, subTitle}) => {
   return (
     <VStack
       // border={"1px"}

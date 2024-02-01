@@ -25,7 +25,7 @@ const greeting = {
   subTitle:
     "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   resumeLink:
-    "https://drive.google.com/file/d/1qXnUfDG8s7TwCpwOMTFgH2Wi7fJzyB7l/view?usp=sharing",
+    "https://drive.google.com/file/d/12U_11Ab_u5BoFZ6WdKAWYIOtUZoG5Pa-/view",
   portfolio_repository: "https://github.com/Deepumandal/MyProtfolio",
   githubProfile: "https://github.com/Deepumandal",
 };
@@ -75,20 +75,20 @@ const socialMediaLinks = [
     backgroundColor: "#1DA1F2", // Reference https://simpleicons.org/?q=twitter
     active: true,
   },
-  // {
-  //   name: "Facebook",
-  //   link: "https://www.facebook.com/profile.php?id=100023750443100",
-  //   fontAwesomeIcon: "facebook.png", // Reference https://fontawesome.com/icons/facebook-f?style=brands
-  //   backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
-  //   active: true
-  // },
-  // {
-  //   name: "Instagram",
-  //   link: "https://www.instagram.com/no_mercy_hunter/",
-  //   fontAwesomeIcon: "instagram.png", // Reference https://fontawesome.com/icons/instagram?style=brands
-  //   backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
-  //   active: true
-  // },
+  {
+    name: "NPM",
+    link: "https://www.npmjs.com/package/web-app-init",
+    fontAwesomeIcon: "npm.png", // Reference https://fontawesome.com/icons/twitter?style=brands
+    backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=twitter
+    active: true,
+  },
+  {
+    name: "LeetCode",
+    link: "https://leetcode.com/Deepumandal78/",
+    fontAwesomeIcon: "leetcode.png", // Reference https://fontawesome.com/icons/twitter?style=brands
+    backgroundColor: "", // Reference https://simpleicons.org/?q=twitter
+    active: true,
+  },
   {
     name: "Medium",
     link: "https://medium.com/@deepak.studentid2030",
@@ -783,7 +783,9 @@ const degrees = {
       alt_name: "Amity University",
       duration: "2023 - Present",
       descriptions: [
-        "⚡ I am currently Pursuing BCA from the Amity University Online",
+        "⚡ Pursuing Bachelor of Computer Applications, from 2023.",
+        "⚡ Operating Systems; Databases; Algorithms; Programming Languages; Comp.; Architecture; c Programming",
+        "⚡ Effective communication; Collaboration; Adaptability; critical and innovative mindset.",
       ],
       website_link: "https://amityonline.com/",
     },

@@ -1,13 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const ThemeMode: React.FC = () => {
+  const [theme, setTheme] = useState<"light" | "dark" | null>(null);
   const switchMode = () => {
-    // todo
+    setTheme((pre) => (pre === "dark" ? "light" : "dark"));
   };
-  useEffect(() => {
-    switchMode();
-  }, []);
 
+  useEffect(() => {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  }, []);
+  useEffect(() => {
+    if (theme === "dark") {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, [theme]);
   return (
     <div
       className="aspect-square laptop:w-fit laptop:h-fit  tabView:h-full bg-white rounded-full p-2 cursor-pointer"

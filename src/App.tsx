@@ -5,7 +5,7 @@ import TabMenuDetails from "./components/common/TabMenuDetails";
 
 const App: React.FC = () => {
   return (
-    <div className="w-sreen min-h-screen tabView:min-h-screen h-fit bg-backgroundLight  ">
+    <div className="w-sreen min-h-screen tabView:min-h-screen h-fit bg-background-l dark:bg-background-d  ">
       <div className="tabView:flex tabView:max-w-[800px] laptop:max-w-[1400px] min-h-full h-fit w-space-avialable m-auto">
         {/* <---------- profile card ----------> */}
         <div className="tabView:max-w-64 laptop:max-w-80 ">

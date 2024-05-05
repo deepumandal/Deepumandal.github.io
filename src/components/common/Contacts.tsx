@@ -24,7 +24,7 @@ const Contacts:React.FC = () => {
     },
   ];
   return (
-    <div className="bg-[#F3F5F7] w-[90%] shadow-sm px-4 py-2 rounded-2xl border border-slate-300 flex flex-col justify-around">
+    <div className="bg-secondary-l dark:bg-secondary-d  w-[90%] shadow-sm px-4 py-2 rounded-2xl border border-slate-300 flex flex-col justify-around">
       {contacts.map((contact, index) => {
         return (
           <div>
@@ -36,8 +36,8 @@ const Contacts:React.FC = () => {
                 title={contact.title}
               />
               <div>
-                <p className="text-[12px]">{contact.title}</p>
-                <p className="text-[11px]">{contact.value}</p>
+                <p className="text-[12px] text-heading-l dark:text-heading-d">{contact.title}</p>
+                <p className="text-[11px] text-text-l dark:text-text-d">{contact.value}</p>
               </div>
             </div>
             {index !== contacts.length - 1 && (

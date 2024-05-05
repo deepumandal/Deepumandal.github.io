@@ -54,7 +54,7 @@ const TabMenuDetails: React.FC = () => {
     " My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.",
   ];
   return (
-    <div className="bg-white h-fit w-full px-4 py-5 flex flex-col justify-center tabView:justify-start gap-2 tabView:gap-0 mb-14 tabView:m-0 rounded-2xl  overflow-hidden">
+    <div className="bg-primary-l dark:bg-primary-d h-fit w-full px-4 py-5 flex flex-col justify-center tabView:justify-start gap-2 tabView:gap-0 mb-14 tabView:m-0 rounded-2xl  overflow-hidden">
       <div className="gap-1  flex items-center tabView:items-start tabView:p-2 laptop:p-5 flex-col">
         <Heading title="About me" />
         <AboutDescription description={description} />
@@ -62,7 +62,6 @@ const TabMenuDetails: React.FC = () => {
       <div className="gap-1 flex items-center tabView:items-start tabView:p-2 laptop:p-5 flex-col">
         <Heading title="I am" />
         <MyExpertiseCards expertiseCards={expertiseCards.splice(0, 3)} />
-        {/* ScreenWidth */}
       </div>
       {expertiseCards.length > 2 && <ShowMore />}
     </div>

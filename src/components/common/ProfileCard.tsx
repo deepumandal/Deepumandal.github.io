@@ -18,7 +18,7 @@ const ProfileCard: React.FC = () => {
           <Contacts />
           <DownloadCV />
         </div>
-        <div className=" bg-white absolute left-0 right-0 bottom-0 rounded-xl h-[80%] tabView:h-[85%] z-0"></div>
+        <div className="bg-primary-l dark:bg-primary-d absolute left-0 right-0 bottom-0 rounded-xl h-[80%] tabView:h-[85%] z-0"></div>
       </div>
     </div>
   );

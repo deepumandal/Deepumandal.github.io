@@ -1,12 +1,28 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: "selector",
+  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
-        backgroundLight: "#F1F7FF",
-        backgroundDark: "",
+        // Light Theme
+        "background-l": "#F5F5F5", // Light gray background
+        "primary-l": "#FFFFFF", // Slate blue primary color
+        "secondary-l": "#F9F8FA", // Soft blue secondary color
+        "heading-l": "#2E3440", // Dark gray for headings
+        "text-l": "#4C566A", // Medium gray for text
+        "link-l": "#4C566A", // Medium gray for text
+        "border-l" : "#FFFFFF", 
+        
+
+        // Dark Theme
+        "background-d": "#2E3440", // Dark blue-gray background
+        "primary-d": "#000000", // Light blue primary color
+        "secondary-d": "#434C5E", // Dark slate blue secondary color
+        "heading-d": "#D8DEE9", // Light gray for headings
+        "text-d": "#AEB7C4", // Medium gray for text
+        "link-d": "#AEB7C4", // Medium gray for text
+        "border-d" : "#FFFFFF", 
       },
       fontFamily: {
         inter: ["inter"],

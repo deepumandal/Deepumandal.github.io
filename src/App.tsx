@@ -1,7 +1,8 @@
 import React from "react";
 import ProfileCard from "./components/common/ProfileCard";
-import TabMenu from "./components/common/TabMenu";
+
 import TabMenuDetails from "./components/common/TabMenuDetails";
+import NavigationTabs from "./components/common/NavigationTabs";
 
 const App: React.FC = () => {
   return (
@@ -14,7 +15,7 @@ const App: React.FC = () => {
         {/* <---------- profile card ----------> */}
         {/* <---------- Profile Details  ---------- > */}
         <div className="min-h-full  laptop:flex laptop:flex-row-reverse justify-center gap-3  rounded-lg  w-[90%] mx-auto tabView:m-0 tabView:pt-10  tabView:pr-10 ">
-          <TabMenu />
+          <NavigationTabs />
           <TabMenuDetails />
         </div>
         {/* <---------- Profile Details  ---------- > */}

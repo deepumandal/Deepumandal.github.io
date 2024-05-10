@@ -12,8 +12,7 @@ export default {
         "heading-l": "#2E3440", // Dark gray for headings
         "text-l": "#4C566A", // Medium gray for text
         "link-l": "#4C566A", // Medium gray for text
-        "border-l" : "#FFFFFF", 
-      
+        "border-l": "#FFFFFF",
 
         // Dark Theme
         "background-d": "#1B2531", // Dark blue-gray background
@@ -22,11 +21,11 @@ export default {
         "heading-d": "#D8DEE9", // Light gray for headings
         "text-d": "#AEB7C4", // Medium gray for text
         "link-d": "#AEB7C4", // Medium gray for text
-        "border-d" : "#FFFFFF", 
+        "border-d": "#FFFFFF",
       },
       fontFamily: {
         inter: ["inter"],
-        epilogue : ["epilogue"]
+        epilogue: ["epilogue"],
       },
       screens: {
         tabView: "490px",
@@ -43,6 +42,10 @@ export default {
       },
       spacing: {
         "space-avialable": "-webkit-fill-available",
+      },
+      boxShadow: {
+        customShadow:
+          "rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px",
       },
     },
   },

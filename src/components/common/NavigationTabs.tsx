@@ -6,7 +6,7 @@ import { IgeneralState } from "../../redux/initialState/general";
 import { TabsEnum } from "../../utils/global.enum";
 import { switchTabReducer } from "../../redux/Slices/general.slice";
 
-const TabMenu: React.FC = () => {
+const NavigationTabs: React.FC = () => {
   const { TabLists } = useSelector<RootState>(
     (store) => store.generalSlice
   ) as IgeneralState;
@@ -39,4 +39,4 @@ const TabMenu: React.FC = () => {
   );
 };
 
-export default TabMenu;
+export default NavigationTabs;

@@ -10,7 +10,7 @@ const AboutDescription: React.FC<IAboutDescription> = ({ description }) => {
         return (
           <p
             key={index}
-            className="text-center text-text-l dark:text-text-d tabView:text-left text-base tabView:text-base laptop:text-lg p-2 laptop:p-3"
+            className="text-center font-inter text-text-l dark:text-text-d tabView:text-left text-base tabView:text-base laptop:text-lg p-2 laptop:p-3"
           >
             {item}
           </p>

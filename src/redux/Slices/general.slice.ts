@@ -6,8 +6,8 @@ const GeneralSlice = createSlice({
   name: "GeneralSlice",
   initialState: generalState,
   reducers: {
-    // TODO
     switchThemeModeReducer: switchThemeMode,
+    // TODO
   },
 });
 
